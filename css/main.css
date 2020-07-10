@@ -36,11 +36,18 @@ nav ul li {
   margin: 30px;
 }
 
-nav ul li a {
+nav ul li a:link {
   color: tomato; /* fallback color */
   color: rgba(242, 142, 107,1);
   text-decoration: none;
 }
+
+nav ul li a:visited {
+  color: tomato; /* fallback color */
+  color: rgba(242, 142, 107,1);
+  text-decoration: none;
+}
+
 nav ul li a:hover {
   color: blue; /* fallback color */
   color: rgba(138, 210, 215, 1);
@@ -64,7 +71,13 @@ nav_g4db ul li {
   margin: 30px;
 }
 
-nav_g4db ul li a {
+nav_g4db ul li a:link {
+  color: black; /* fallback color */
+  color: rgba(24, 157, 217, 1);
+  text-decoration: none;
+}
+
+nav_g4db ul li a:visited {
   color: black; /* fallback color */
   color: rgba(24, 157, 217, 1);
   text-decoration: none;
@@ -93,7 +106,13 @@ nav_oligor ul li {
   margin: 30px;
 }
 
-nav_oligor ul li a {
+nav_oligor ul li a:link {
+  color: black; /* fallback color */
+  color: rgba(55, 104, 142, 1);
+  text-decoration: none;
+}
+
+nav_oligor ul li a:visited {
   color: black; /* fallback color */
   color: rgba(55, 104, 142, 1);
   text-decoration: none;
@@ -132,7 +151,12 @@ nav_oligor ul li a:hover {
   color: rgba(242, 142, 107,1)
 }
 
-.welcome-section a {
+.welcome-section a:link {
+  color: tomato; /* fallback color */
+  color: rgba(242, 142, 107,1)
+}
+
+.welcome-section a:visited {
   color: tomato; /* fallback color */
   color: rgba(242, 142, 107,1)
 }
@@ -187,7 +211,12 @@ nav_oligor ul li a:hover {
   color: rgba(70,55,45,1)
 }
 
-.g4db a {
+.g4db a:link {
+  color: black; /* fallback color */
+  color: rgba(70,55,45,1)
+}
+
+.g4db a:visited {
   color: black; /* fallback color */
   color: rgba(70,55,45,1)
 }
@@ -243,7 +272,12 @@ nav_oligor ul li a:hover {
   color: rgba(55, 104, 142,1)
 }
 
-.oligor a {
+.oligor a:link {
+  color: black; /* fallback color */
+  color: rgba(55, 104, 142,1)
+}
+
+.oligor a:visited {
   color: black; /* fallback color */
   color: rgba(55, 104, 142,1)
 }

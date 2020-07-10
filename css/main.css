@@ -64,7 +64,7 @@ nav_g4db ul li {
   margin: 30px;
 }
 
-nav_g4db ul li a:link {
+nav_g4db ul li a {
   color: black; /* fallback color */
   color: rgba(24, 157, 217, 1);
   text-decoration: none;
@@ -93,7 +93,7 @@ nav_oligor ul li {
   margin: 30px;
 }
 
-nav_oligor ul li a:link {
+nav_oligor ul li a {
   color: black; /* fallback color */
   color: rgba(55, 104, 142, 1);
   text-decoration: none;
@@ -132,7 +132,7 @@ nav_oligor ul li a:hover {
   color: rgba(242, 142, 107,1)
 }
 
-.welcome-section a:link {
+.welcome-section a {
   color: tomato; /* fallback color */
   color: rgba(242, 142, 107,1)
 }
@@ -187,7 +187,7 @@ nav_oligor ul li a:hover {
   color: rgba(70,55,45,1)
 }
 
-.g4db a:link {
+.g4db a {
   color: black; /* fallback color */
   color: rgba(70,55,45,1)
 }
@@ -243,7 +243,7 @@ nav_oligor ul li a:hover {
   color: rgba(55, 104, 142,1)
 }
 
-.oligor a:link {
+.oligor a {
   color: black; /* fallback color */
   color: rgba(55, 104, 142,1)
 }

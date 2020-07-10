@@ -22,6 +22,7 @@ footer {
 
  nav ul {
   position: fixed;
+  z-index:42; /*to keep navbar on top of body elements*/
   text-align: right;
   width: 100%;
   background-color: white; /* fallback color*/
@@ -49,6 +50,7 @@ nav ul li a:hover {
 
  nav_g4db ul {
   position: fixed;
+  z-index:42; /*to keep navbar on top of body elements*/
   text-align: right;
   width: 100%;
   background-color: white; /* fallback color*/
@@ -77,6 +79,7 @@ nav_g4db ul li a:hover {
 
  nav_oligor ul {
   position: fixed;
+  z-index:42; /*to keep navbar on top of body elements*/
   text-align: right;
   width: 100%;
   background-color: white; /* fallback color*/
@@ -92,13 +95,13 @@ nav_oligor ul li {
 
 nav_oligor ul li a:link {
   color: black; /* fallback color */
-  color: rgba(24, 157, 217, 1);
+  color: rgba(55, 104, 142, 1);
   text-decoration: none;
 }
 
 nav_oligor ul li a:hover {
   color: black; /* fallback color */
-  color: rgba(70,55,45,1);
+  color: rgba(242, 102, 76,1);
 }
 
 /* welcome */
@@ -137,11 +140,6 @@ nav_oligor ul li a:hover {
 .welcome-section a:hover {
   color: green; /* fallback color */
   color: rgba(178,212,89,1);
-}
-
-.welcome-section a:visited {
-  color: green; /* fallback color */
-  color: rgba(105,102,174,1);
 }
 
 /* g4db section */
@@ -199,10 +197,6 @@ nav_oligor ul li a:hover {
   color: rgba(95,146,87,1);
 }
 
-.g4db a:visited {
-  color: black; /* fallback color */
-  color: rgba(95,146,87,1);
-}
 
 /* oligor section */
 
@@ -210,7 +204,7 @@ nav_oligor ul li a:hover {
   top: 20;
   line-height: 1.6;
   background: white; /* fallback color*/
-  background: rgba(24, 157, 217, 0.35);
+  background: rgba(242, 102, 76, 0.35);
   min-height: 55vh;
   padding-top: 15vh;
   padding-bottom: 25vh;
@@ -225,10 +219,10 @@ nav_oligor ul li a:hover {
   column-count: 3;
   width:25%;
   text-align: center;
-  -webkit-column-rule: 1px solid rgba(70,55,45,1);
-  -moz-column-rule: 1px solid rgba(70,55,45,1);
-  -ms-column-rule: 1px solid rgba(70,55,45,1);
-  column-rule: 1px solid rgba(70,55,45,1);
+  -webkit-column-rule: 1px solid rgba(55, 104, 142,1);
+  -moz-column-rule: 1px solid rgba(55, 104, 142,1);
+  -ms-column-rule: 1px solid rgba(55, 104, 142,1);
+  column-rule: 1px solid rgba(55, 104, 142,1);
   margin-left: auto;
   margin-right: auto;
   list-style-type: none
@@ -236,34 +230,28 @@ nav_oligor ul li a:hover {
 
 .oligor h1 {
   color: black; /* fallback color */
-  color: rgba(70,55,45,1)
+  color: rgba(55, 104, 142,1)
 }
 
 .oligor h2 {
   color: black; /* fallback color */
-  color: rgba(70,55,45,1)
+  color: rgba(55, 104, 142,1)
 }
 
 .oligor h3 {
   color: black; /* fallback color */
-  color: rgba(70,55,45,1)
+  color: rgba(55, 104, 142,1)
 }
 
 .oligor a:link {
   color: black; /* fallback color */
-  color: rgba(70,55,45,1)
+  color: rgba(55, 104, 142,1)
 }
 
 .oligor a:hover {
   color: black; /* fallback color */
-  color: rgba(95,146,87,1);
+  color: rgba(55, 104, 142,1);
 }
-
-.oligor a:visited {
-  color: black; /* fallback color */
-  color: rgba(95,146,87,1);
-}
-
 
 /* dropdown */
 
@@ -378,7 +366,7 @@ nav_oligor ul li a:hover {
   background-color: white;
   background-color: rgba(255,255,255,0.75);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(70,55,45, 0.25);
+  box-shadow: 0px 8px 16px 0px rgba(242, 102, 76, 0.25);
   z-index: 1;
 }
 
@@ -425,7 +413,7 @@ nav_oligor ul li a:hover {
 
 .dropdown_oligor-content a:hover {
   background-color: blue;
-  background-color: rgba(24, 157, 217, 0.35);
+  background-color: rgba(242, 102, 76, 0.35);
 }
 
 .dropdown:hover .dropdown-content {
@@ -439,6 +427,14 @@ nav_oligor ul li a:hover {
 .dropdown_oligor:hover .dropdown_oligor-content {
   display: block;
 }
+
+.border_oligor {
+  border-width: 3px;
+  border-color: steelblue;
+  border-color: rgba(55, 104, 142,1);
+  border-style: dashed;
+  
+} 
 
 
 

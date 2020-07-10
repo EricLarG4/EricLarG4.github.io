@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>main</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>
+
+<body>
+
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
+<!--end of Navigation bar-->
+  
+<div id="welcome-section" class="welcome-section">
+
+
+<h1>EricLarG4's GitHub</h1>
+
+<iframe width='100%' height='300' src='https://rdrr.io/snippets/embed/?code=epsilon.calculator%20%3C-%20function(sequence%20%3D%20NULL)%7B%0A%20%20library(stringr)%0A%20%20library(tidyverse)%0A%20%20epsilondb%20%3C-%20epsilondb%0A%20%20epsilon.calc%20%3C-%20data.frame()%0A%20%20buffer%20%3C-%20data.frame()%0A%20%20result%20%3C-%20data.frame()%0A%20%20for%20(i%20in%201%3Astr_length(sequence))%20%7B%0A%20%20%20%20buffer%20%3C-%20data.frame(position%20%3D%20i%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nucleo%20%3D%20substr(sequence%2C%20i%2C%20i)%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20nn%20%3D%20substr(sequence%2C%20i%2B1%2C%20i%2B1)%0A%20%20%20%20)%0A%20%20%20%20epsilon.calc%20%3C-%20rbind(epsilon.calc%2C%20buffer)%0A%20%20%7D%0A%20%20epsilon.calc%20%3C-%20epsilon.calc%20%25%3E%25%0A%20%20%20%20mutate(%0A%20%20%20%20%20%20indiv.base.cont%20%3D%20case_when(%20%23individual%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'G'%20~%20epsilondb%24epsilon%5Bepsilondb%24base%20%3D%3D%20'G'%5D%2C%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'C'%20~%20epsilondb%24epsilon%5Bepsilondb%24base%20%3D%3D%20'C'%5D%2C%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'T'%20~%20epsilondb%24epsilon%5Bepsilondb%24base%20%3D%3D%20'T'%5D%2C%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'A'%20~%20epsilondb%24epsilon%5Bepsilondb%24base%20%3D%3D%20'A'%5D%0A%20%20%20%20%20%20)%2C%0A%20%20%20%20%20%20nn.cont%20%3D%20case_when(%20%23nearest%20neighbor%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'G'%20~%20case_when(%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'G'%20~%20epsilondb%24Gcorr%5Bepsilondb%24base%20%3D%3D%20'G'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'C'%20~%20epsilondb%24Ccorr%5Bepsilondb%24base%20%3D%3D%20'G'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'T'%20~%20epsilondb%24Tcorr%5Bepsilondb%24base%20%3D%3D%20'G'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'A'%20~%20epsilondb%24Acorr%5Bepsilondb%24base%20%3D%3D%20'G'%5D%0A%20%20%20%20%20%20%20%20)%2C%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'C'%20~%20case_when(%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'G'%20~%20epsilondb%24Gcorr%5Bepsilondb%24base%20%3D%3D%20'C'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'C'%20~%20epsilondb%24Ccorr%5Bepsilondb%24base%20%3D%3D%20'C'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'T'%20~%20epsilondb%24Tcorr%5Bepsilondb%24base%20%3D%3D%20'C'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'A'%20~%20epsilondb%24Acorr%5Bepsilondb%24base%20%3D%3D%20'C'%5D%0A%20%20%20%20%20%20%20%20)%2C%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'T'%20~%20case_when(%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'G'%20~%20epsilondb%24Gcorr%5Bepsilondb%24base%20%3D%3D%20'T'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'C'%20~%20epsilondb%24Ccorr%5Bepsilondb%24base%20%3D%3D%20'T'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'T'%20~%20epsilondb%24Tcorr%5Bepsilondb%24base%20%3D%3D%20'T'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'A'%20~%20epsilondb%24Acorr%5Bepsilondb%24base%20%3D%3D%20'T'%5D%0A%20%20%20%20%20%20%20%20)%2C%0A%20%20%20%20%20%20%20%20nucleo%20%3D%3D%20'A'%20~%20case_when(%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'G'%20~%20epsilondb%24Gcorr%5Bepsilondb%24base%20%3D%3D%20'A'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'C'%20~%20epsilondb%24Ccorr%5Bepsilondb%24base%20%3D%3D%20'A'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'T'%20~%20epsilondb%24Tcorr%5Bepsilondb%24base%20%3D%3D%20'A'%5D%2C%0A%20%20%20%20%20%20%20%20%20%20nn%20%3D%3D%20'A'%20~%20epsilondb%24Acorr%5Bepsilondb%24base%20%3D%3D%20'A'%5D%0A%20%20%20%20%20%20%20%20)%0A%20%20%20%20%20%20)%0A%20%20%20%20)%0A%20%20epsilon.calc%24indiv.base.cont%5B1%5D%20%3D%200%20%23attributes%200%20to%20the%20first%20nucleobase%20individual%20contribution%0A%20%20epsilon.calc%24indiv.base.cont%5Bstr_length(sequence)%5D%20%3D%200%20%23attributes%200%20to%20the%20last%20nucleobase%20individual%20contribution%0A%20%20result%20%3C-%20sum(epsilon.calc%24nn.cont%2C%20na.rm%20%3D%20T)%20-%20sum(epsilon.calc%24indiv.base.cont%2C%20na.rm%20%3D%20T)%0A%20%20return(result)%0A%7D%0A' frameborder='0'></iframe>
+
+</div>
+
+<footer>
+  
+<br>
+
+<p>This page is hosted by GitHub Pages.</p>
+<p><a href="mailto: eric.largy@u-bordeaux.fr">Contact</a></p>
+<p><a href="https://arna.cnrs.fr">ARNA lab website</a></p>
+
+<br>
+
+</footer>
+
+</body>
+
+</html>

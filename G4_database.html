@@ -31,7 +31,7 @@ $(function(){
 
 <br>
 
-<h2> Oligonucleotide reports </h2>
+<h2> Oligonucleotide reports quick access for PDB pros </h2>
 
 <br>
 
@@ -61,6 +61,86 @@ $(function(){
   <li><a href="SI/g4db report - 5YEY.html" target="_blank">5YEY</a></li>
   <li><a href="SI/g4db report - HIV1XX.html" target="_blank">HIV1XX</a></li>  
 </ul>
+
+<br>
+
+<h2> Oligonucleotide database in details </h2>
+
+<br>
+
+<style>
+#oligotable {
+  border-collapse: collapse;
+  width: 75%;
+  margin-left:auto;margin-right:auto;
+}
+
+#oligotable td, #oligotable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#oligotable tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#oligotable tr:nth-child(odd) a {
+  background-color: brown;
+  background-color: rgba(70,55,45,0);
+  color: white;
+}
+
+#oligotable tr:nth-child(odd) {
+  background-color: brown;
+  background-color: rgba(70,55,45,0.85);
+  color: white;
+}
+
+#oligotable tr:hover {
+  background-color: tomato;
+}
+
+#oligotable tr:hover a {
+  background-color: tomato;
+}
+
+#oligotable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: brown;
+  background-color: rgba(70,55,45,1);
+  color: white;
+}
+</style>
+
+
+<table id="oligotable">
+  <tr>
+    <th>PDB code</th>
+    <th>Report</th>
+    <th>Short description</th>
+    <th>Structure</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.rcsb.org/structure/143D" target="_blank">143D</a></td>
+    <td><a href="SI/g4db report - 143D.html" target="_blank">report</a></td>
+    <td>Solution structure of the human telomeric repeat d[AG3(T2AG3)3] G-tetraplex</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.rcsb.org/structure/1XAV" target="_blank">1XAV</a></td>
+    <td><a href="SI/g4db report - 1XAV.html" target="_blank">report</a></td>
+    <td>Solution structure of the biologically relevant G-Quadruplex element in the human c-MYC promoter</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.rcsb.org/structure/2GKU" target="_blank">2GKU</a></td>
+    <td><a href="SI/g4db report - 2GKU.html" target="_blank">report</a></td>
+    <td>Structure of the human telomere in k(+) solution: an intramolecular (3 + 1) g-quadruplex scaffold</td>
+    <td>x</td>
+  </tr>
+</table>
 
 </div>
 

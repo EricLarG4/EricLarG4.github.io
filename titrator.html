@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>titrator</title>
+		<link rel="stylesheet" type="text/css" href="css/titrator.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>
+
+<body>
+  
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav_titrator.html");
+});
+</script>
+<!--end of Navigation bar-->
+  
+<div id="titrator" class="titrator">
+
+
+<h1>A Shiny app to generate acid/base titration data and figures</h1>
+
+<br>
+
+<iframe id="titrator_shiny" src="https://elargy.shinyapps.io/titratoR/" style="border: none; width: 100%; height: 850px" frameborder="0"></iframe>
+
+<br>
+
+</div>
+
+<footer>
+  
+<br>
+
+<p>This page is hosted by GitHub Pages.</p>
+<p><a href="mailto: eric.largy@u-bordeaux.fr">Contact</a></p>
+<p><a href="https://arna.cnrs.fr">ARNA lab website</a></p>
+
+<br>
+
+</footer>
+
+</body>
+
+</html>

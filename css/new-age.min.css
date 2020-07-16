@@ -179,6 +179,7 @@
  section.features .feature-item i{font-size:80px;display:block;margin-bottom:15px;background:linear-gradient(to left,#7b4397,#dc2430);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
 
+
  /*cta*/
 
  section.cta{position:relative;padding:250px 0;background-image:url(../img/bg-cta.png);background-position:center;background-size:cover}
@@ -190,6 +191,10 @@
  @media (min-width:768px){section.cta .cta-content h2{font-size:80px}}
 
  section.cta .overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5)}
+
+
+ 
+ /*contact*/
 
  section.contact{text-align:center}
 
@@ -261,7 +266,6 @@
    -moz-column-count: 6;
    -o-column-count: 6;
     column-count: 6;
-    width:75%;
     text-align: center;
     -webkit-column-rule: 1px solid rgba(70,55,45,1);
     -moz-column-rule: 1px solid rgba(70,55,45,1);
@@ -289,8 +293,6 @@
 
   .oligotable {
     border-collapse: collapse;
-    width: 100%;
-    margin-left:auto;margin-right:auto;
   }
 
   .oligotable table, td, tr, th {

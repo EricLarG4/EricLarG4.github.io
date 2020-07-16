@@ -66,11 +66,11 @@ nav_g4db ul li a:hover {
 }
 
 .g4db ul {
- -webkit-column-count: 3;
- -ms-column-count: 3;
- -moz-column-count: 3;
- -o-column-count: 3;
-  column-count: 3;
+ -webkit-column-count: 6;
+ -ms-column-count: 6;
+ -moz-column-count: 6;
+ -o-column-count: 6;
+  column-count: 6;
   width:25%;
   text-align: center;
   -webkit-column-rule: 1px solid rgba(70,55,45,1);
@@ -80,7 +80,7 @@ nav_g4db ul li a:hover {
   margin-left: auto;
   margin-right: auto;
   list-style-type: none
-} 
+}
 
 .g4db h1 {
   color: black; /* fallback color */
@@ -125,7 +125,7 @@ nav_g4db ul li a:hover {
 }
 
 .dropdown_g4db .dropbtn {
-  font-size: 1em;  
+  font-size: 1em;
   border: none;
   outline: none;
   color: tomato;
@@ -176,9 +176,53 @@ nav_g4db ul li a:hover {
   border-color: steelblue;
   border-color: rgba(55, 104, 142,1);
   border-style: dashed;
-  
-} 
 
+}
+
+
+#oligotable {
+  border-collapse: collapse;
+  width: 55%;
+  margin-left:auto;margin-right:auto;
+}
+
+#oligotable td, #oligotable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#oligotable tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#oligotable tr:nth-child(odd) a {
+  background-color: brown;
+  background-color: rgba(70,55,45,0);
+  color: white;
+}
+
+#oligotable tr:nth-child(odd) {
+  background-color: brown;
+  background-color: rgba(70,55,45,0.85);
+  color: white;
+}
+
+#oligotable tr:hover {
+  background-color: tomato;
+}
+
+#oligotable tr:hover a {
+  background-color: tomato;
+}
+
+#oligotable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: brown;
+  background-color: rgba(70,55,45,1);
+  color: white;
+}
 
 
 

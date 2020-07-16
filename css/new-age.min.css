@@ -116,7 +116,13 @@
 
  /*header*/
 
- header.masthead{position:relative;width:100%;padding-top:150px;padding-bottom:100px;color:#fff;background:url(../img/bg-pattern.png),#7b4397;background:url(../img/bg-pattern.png),linear-gradient(to left,#7b4397,#dc2430)}
+ header.masthead {
+   position:relative;
+   width:100%;padding-top:150px;
+   padding-bottom:100px;
+   color:#fff;
+   background:url(../img/square_bg.png),#7b4397;
+   background:url(../img/square_bg.png),linear-gradient(to left,#7b4397,#dc2430)}
 
  header.masthead .header-content{max-width:500px;margin-bottom:100px;text-align:center}
 

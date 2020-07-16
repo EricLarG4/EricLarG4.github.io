@@ -62,25 +62,25 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">A database of G-quadruplex structural characterization</h1>
+            <h1 class="mb-5">A G-quadruplex structural characterization database.
+              <a class=" js-scroll-trigger" href="#download">
+                View it.
+              </a></h1>
             <a href="https://github.com/EricLarG4/g4dbr/blob/master/inst/extdata/full_database.Rda?raw=true" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Download the database</a>
             <br><br><br>
-            <h2 class="mb-5">The database was generated and can be consulted with the <a class="nav-link js-scroll-trigger" href="#features"><i>g4dbr</i></a> package</h2>
+            <h2 class="mb-5">The database was generated and can be consulted with the g4dbr package.
+              <a class=" js-scroll-trigger" href="#features">
+                Learn more.
+              </a></h2>
             <a href="https://github.com/EricLarG4/g4dbr" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Download the package</a>
           </div>
         </div>
         <div class="col-lg-5 my-auto">
           <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
-                <div class="screen">
-                  <img src="media/logo_g4dbr.png" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
+            <img src="media/logo_g4dbr.png" class="img-fluid" alt="">
+          </div>
+          <div class="button">
+            <!-- You can hook the "home button" to some JavaScript events or just remove it -->
           </div>
         </div>
       </div>
@@ -91,6 +91,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">G-quadruplex database</h2>
           <h1 class="section-heading">Quick access for PDB pros!</h1>
           <p>Click on a pdb id to open the corresponding report</p>
           <div class="quickpdb">
@@ -126,14 +127,20 @@
           <hr>
           <br>
           <h1 class="section-heading">G-quadruplexes in details</h1>
-          <h3>Click on the pdb code and report links for more details</h3>
+          <p>Click on the pdb code and report links for more details</p>
           </div>
           <table class="oligotable">
             <tr>
-              <th>PDB code</th>
-              <th>Report</th>
-              <th>Short description</th>
-              <th>Structure</th>
+              <th>PDB codes</th>
+              <th>Reports</th>
+              <th>Short descriptions</th>
+              <th>Structures<br>
+              <span style="color: tan">dG</span> | 
+              <span style="color: pink">dC</span> | 
+              <span style="color: lightblue">dA</span> | 
+              <span style="color: lightgreen">dT</span> |
+              <span style="color: hotpink">ligand</span>
+              </th>
             </tr>
             <tr>
               <td><a href="https://www.rcsb.org/structure/143D" target="_blank">143D</a></td>
@@ -234,7 +241,9 @@
             <tr>
               <td><a href="https://www.rcsb.org/structure/2MGN" target="_blank">2MGN</a></td>
               <td><a href="SI/g4db report - 2MGN.html" target="_blank">report</a></td>
-              <td>Solution structure of a G-quadruplex bound to the bisquinolinium compound Phen-DC3</td>
+              <td>Solution structure of a G-quadruplex bound to the bisquinolinium compound 
+              <span style="color: hotpink">Phen-DC3</span>
+              </td>
               <td><img id='pdb2' src="media/chimera/2MGN.png"></td>
             </tr>
             <tr>
@@ -252,7 +261,9 @@
             <tr>
               <td><a href="https://www.rcsb.org/structure/4DA3" target="_blank">4DA3</a></td>
               <td><a href="SI/g4db report - 4DA3.html" target="_blank">report</a></td>
-              <td>Crystal structure of an intramolecular human telomeric DNA G-quadruplex 21-mer bound by the naphthalene diimide compound MM41</td>
+              <td>Crystal structure of an intramolecular human telomeric DNA G-quadruplex 21-mer bound by the naphthalene diimide compound 
+              <span style="color: hotpink">MM41</span>
+              </td>
               <td><img id='pdb2' src="media/chimera/4DA3.png"></td>
             </tr>
             <tr>
@@ -288,7 +299,7 @@
             <tr>
               <td>HIV1XX</td>
               <td><a href="SI/g4db report - HIV1XX.html" target="_blank">report</a></td>
-              <td>x</td>
+              <td>no description :(</td>
               <td>no structure available :(</td>
             </tr>
         </table>
@@ -375,14 +386,24 @@
     <div class="container">
       <h2>Contact</h2>
       <ul class="list-inline list-social">
-        <li class="list-inline-item social-twitter">
-          <a href="https://github.com/EricLarG4">
+        <li class="list-inline-item social-twitter" target="_blank">
+          <a href="https://twitter.com/EricLarG4">
             <i class="fab fa-twitter"></i>
           </a>
         </li>
         <li class="list-inline-item social-git">
-          <a href="https://twitter.com/EricLarG4">
+          <a href="https://github.com/EricLarG4" target="_blank">
             <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-team">
+          <a href="https://gabelicagroup.wixsite.com/biophyms" target="_blank">
+            <i class="fas fa-users"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-mail">
+          <a href="mailto: e-deuteron@protonmail.com">
+            <i class="fas fa-at"></i>
           </a>
         </li>
       </ul>

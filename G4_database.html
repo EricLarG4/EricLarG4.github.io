@@ -1,304 +1,448 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-		<title>g4db</title>
-		<link rel="stylesheet" type="text/css" href="css/g4db.css">
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	</head>
+<head>
 
-<body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<!--Navigation bar-->
-<div id="nav-placeholder">
+  <title>G4 database</title>
 
-</div>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav_g4db.html");
-});
-</script>
-<!--end of Navigation bar-->
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-<div id="g4db" class="g4db">
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
-<h1> G4 database</h1>
+  <!-- Custom styles for this template -->
+  <link href="css/new-age.min_g4db.css" rel="stylesheet">
 
-<br>
+</head>
 
-<h3>The G4 database was generated with <a href="https://github.com/EricLarG4/g4dbr" class="text-white">g4dbr</a></h3>
+<body id="page-top">
 
-<br>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+       <a class="nav-link js-scroll-trigger" href="index.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Back to top</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">database</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#cta">help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">//</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="oligor.html">oligoR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="titrator.html">titrator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://ericlarg4.github.io/Portfolio/" target="_blank>portfolio">
+              portfolio
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<h2> Oligonucleotide reports quick access for PDB pros </h2>
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">A G-quadruplex structural characterization database.
+              <a class=" js-scroll-trigger" href="#download">
+                View it.
+              </a></h1>
+            <a href="https://github.com/EricLarG4/g4dbr/blob/master/inst/extdata/full_database.Rda?raw=true" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Download the database</a>
+            <br><br><br>
+            <h2 class="mb-5">The database was generated and can be consulted with the g4dbr package.
+              <a class=" js-scroll-trigger" href="#features">
+                Learn more.
+              </a></h2>
+            <a href="https://github.com/EricLarG4/g4dbr" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Download the package</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <img src="media/logo_g4dbr.png" class="img-fluid" alt="">
+          </div>
+          <div class="button">
+            <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<br>
+  <section class="download bg-primary text-center" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">G-quadruplex database</h2>
+          <h1 class="section-heading">Quick access for PDB pros!</h1>
+          <p>Click on a pdb id to open the corresponding report</p>
+          <div class="quickpdb">
+            <ul>
+              <li><a href="SI/g4db report - 143D.html" target="_blank">143D</a></li>
+              <li><a href="SI/g4db report - 1XAV.html" target="_blank">1XAV</a></li>
+              <li><a href="SI/g4db report - 2GKU.html" target="_blank">2GKU</a></li>
+              <li><a href="SI/g4db report - 2HY9.html" target="_blank">2HY9</a></li>
+              <li><a href="SI/g4db report - 2JPZ.html" target="_blank">2JPZ</a></li>
+              <li><a href="SI/g4db report - 2JSM.html" target="_blank">2JSM</a></li>
+              <li><a href="SI/g4db report - 2KF8.html" target="_blank">2KF8</a></li>
+              <li><a href="SI/g4db report - 2KM3.html" target="_blank">2KM3</a></li>
+              <li><a href="SI/g4db report - 2KPR.html" target="_blank">2KPR</a></li>
+              <li><a href="SI/g4db report - 2KYP.html" target="_blank">2KYP</a></li>
+              <li><a href="SI/g4db report - 2LBY.html" target="_blank">2LBY</a></li>
+              <li><a href="SI/g4db report - 2LK7.html" target="_blank">2LK7</a></li>
+              <li><a href="SI/g4db report - 2LOD.html" target="_blank">2LOD</a></li>
+              <li><a href="SI/g4db report - 2LPW.html" target="_blank">2LPW</a></li>
+              <li><a href="SI/g4db report - 2LXQ.html" target="_blank">2LXQ</a></li>
+              <li><a href="SI/g4db report - 2M27.html" target="_blank">2M27</a></li>
+              <li><a href="SI/g4db report - 2MGN.html" target="_blank">2MGN</a></li>
+              <li><a href="SI/g4db report - 2N4Y.html" target="_blank">2N4Y</a></li>
+              <li><a href="SI/g4db report - 2O3M.html" target="_blank">2O3M</a></li>
+              <li><a href="SI/g4db report - 4DA3.html" target="_blank">4DA3</a></li>
+              <li><a href="SI/g4db report - 5I2V.html" target="_blank">5I2V</a></li>
+              <li><a href="SI/g4db report - 5LQG.html" target="_blank">5LQG</a></li>
+              <li><a href="SI/g4db report - 5NYS.html" target="_blank">5NYS</a></li>
+              <li><a href="SI/g4db report - 5YEY.html" target="_blank">5YEY</a></li>
+              <li><a href="SI/g4db report - 5YEY.html" target="_blank">6GZN</a></li>
+              <li><a href="SI/g4db report - HIV1XX.html" target="_blank">HIV1XX</a></li>
+            </ul>
+          </div>
+          <hr>
+          <br>
+          <h1 class="section-heading">G-quadruplexes in details</h1>
+          <p>Click on the pdb code and report links for more details</p>
+          </div>
+          <table class="oligotable">
+            <tr>
+              <th>PDB codes</th>
+              <th>Reports</th>
+              <th>Short descriptions</th>
+              <th>Structures<br>
+              <span style="color: tan">dG</span> | 
+              <span style="color: pink">dC</span> | 
+              <span style="color: lightblue">dA</span> | 
+              <span style="color: lightgreen">dT</span> |
+              <span style="color: hotpink">ligand</span>
+              </th>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/143D" target="_blank">143D</a></td>
+              <td><a href="SI/g4db report - 143D.html" target="_blank">report</a></td>
+              <td>Solution structure of the human telomeric repeat d[AG3(T2AG3)3] G-tetraplex</td>
+              <td><img id='pdb' src="media/chimera/143D.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/1XAV" target="_blank">1XAV</a></td>
+              <td><a href="SI/g4db report - 1XAV.html" target="_blank">report</a></td>
+              <td>Major G-quadruplex structure formed in human c-MYC promoter, a monomeric parallel-stranded quadruplex</td>
+              <td><img id='pdb2' src="media/chimera/1XAV.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2GKU" target="_blank">2GKU</a></td>
+              <td><a href="SI/g4db report - 2GKU.html" target="_blank">report</a></td>
+              <td>Monomeric human telomere DNA tetraplex with 3+1 strand fold topology, two edgewise loops and double-chain reversal loop</td>
+              <td><img id='pdb2' src="media/chimera/2GKU.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2HY9" target="_blank">2HY9</a></td>
+              <td><a href="SI/g4db report - 2HY9.html" target="_blank">report</a></td>
+              <td>Human telomere DNA quadruplex structure in K+ solution hybrid-1 form</td>
+              <td><img id='pdb2' src="media/chimera/2HY9.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2JPZ" target="_blank">2JPZ</a></td>
+              <td><a href="SI/g4db report - 2JPZ.html" target="_blank">report</a></td>
+              <td>Human telomere DNA quadruplex structure in K+ solution hybrid-2 form</td>
+              <td><img id='pdb2' src="media/chimera/2JPZ.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2JSM" target="_blank">2JSM</a></td>
+              <td><a href="SI/g4db report - 2JSM.html" target="_blank">report</a></td>
+              <td>Monomeric human telomere DNA tetraplex with 3+1 strand fold topology, two edgewise loops and double-chain reversal loop</td>
+              <td><img id='pdb2' src="media/chimera/2JSM.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2KF8" target="_blank">2KF8</a></td>
+              <td><a href="SI/g4db report - 2KF8.html" target="_blank">report</a></td>
+              <td>Structure of a two-G-tetrad basket-type intramolecular G-quadruplex formed by human telomeric repeats in K+ solution</td>
+              <td><img id='pdb2' src="media/chimera/2KF8.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2KM3" target="_blank">2KM3</a></td>
+              <td><a href="SI/g4db report - 2KM3.html" target="_blank">report</a></td>
+              <td>Structure of an intramolecular G-quadruplex containing a G.C.G.C tetrad formed by human telomeric variant CTAGGG repeats</td>
+              <td><img id='pdb2' src="media/chimera/2KM3.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2KPR" target="_blank">2KPR</a></td>
+              <td><a href="SI/g4db report - 2KPR.html" target="_blank">report</a></td>
+              <td>Monomeric intronic human chl1 gene quadruplex DNA</td>
+              <td><img id='pdb2' src="media/chimera/2KPR.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2KYP" target="_blank">2KYP</a></td>
+              <td><a href="SI/g4db report - 2KYP.html" target="_blank">report</a></td>
+              <td>Monomeric Human CKIT-2 proto-oncogene promoter quadruplex DNA</td>
+              <td><img id='pdb2' src="media/chimera/2KYP.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2LBY" target="_blank">2LBY</a></td>
+              <td><a href="SI/g4db report - 2LBY.html" target="_blank">report</a></td>
+              <td>G-quadruplex structure formed at the 5'-end of NHEIII_1 element in human c-MYC promoter</td>
+              <td><img id='pdb2' src="media/chimera/2LBY.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2LK7" target="_blank">2LK7</a></td>
+              <td><a href="SI/g4db report - 2LK7.html" target="_blank">report</a></td>
+              <td>Monomer-dimer equilibrium for 5'-5' stacking of propeller-type parallel-stranded G-quadruplexes</td>
+              <td><img id='pdb2' src="media/chimera/2LK7.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2LOD" target="_blank">2LOD</a></td>
+              <td><a href="SI/g4db report - 2LOD.html" target="_blank">report</a></td>
+              <td>Solution-state structure of an intramolecular G-quadruplex with propeller, diagonal and edgewise loops</td>
+              <td><img id='pdb2' src="media/chimera/2LOD.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2LPW" target="_blank">2LPW</a></td>
+              <td><a href="SI/g4db report - 2LPW.html" target="_blank">report</a></td>
+              <td>Human CEB25 minisatellite G-quadruplex</td>
+              <td><img id='pdb2' src="media/chimera/2LPW.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2LXQ" target="_blank">2LXQ</a></td>
+              <td><a href="SI/g4db report - 2LXQ.html" target="_blank">report</a></td>
+              <td>Monomeric PilE G-Quadruplex DNA from Neisseria Gonorrhoeae</td>
+              <td><img id='pdb2' src="media/chimera/2LXQ.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2M27" target="_blank">2M27</a></td>
+              <td><a href="SI/g4db report - 2M27.html" target="_blank">report</a></td>
+              <td>Major G-quadruplex structure formed in human VEGF promoter, a monomeric parallel-stranded quadruplex</td>
+              <td><img id='pdb2' src="media/chimera/2M27.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2MGN" target="_blank">2MGN</a></td>
+              <td><a href="SI/g4db report - 2MGN.html" target="_blank">report</a></td>
+              <td>Solution structure of a G-quadruplex bound to the bisquinolinium compound 
+              <span style="color: hotpink">Phen-DC3</span>
+              </td>
+              <td><img id='pdb2' src="media/chimera/2MGN.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2N4Y" target="_blank">2N4Y</a></td>
+              <td><a href="SI/g4db report - 2N4Y.html" target="_blank">report</a></td>
+              <td>Structure and possible function of a G-quadruplex in the long terminal repeat of the proviral HIV-1 genome</td>
+              <td><img id='pdb2' src="media/chimera/2N4Y.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/2O3M" target="_blank">2O3M</a></td>
+              <td><a href="SI/g4db report - 2O3M.html" target="_blank">report</a></td>
+              <td>Monomeric G-DNA tetraplex from human C-kit promoter</td>
+              <td><img id='pdb2' src="media/chimera/2O3M.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/4DA3" target="_blank">4DA3</a></td>
+              <td><a href="SI/g4db report - 4DA3.html" target="_blank">report</a></td>
+              <td>Crystal structure of an intramolecular human telomeric DNA G-quadruplex 21-mer bound by the naphthalene diimide compound 
+              <span style="color: hotpink">MM41</span>
+              </td>
+              <td><img id='pdb2' src="media/chimera/4DA3.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/5I2V" target="_blank">5I2V</a></td>
+              <td><a href="SI/g4db report - 5I2V.html" target="_blank">report</a></td>
+              <td>NMR structure of a new G-quadruplex forming sequence within the KRAS proto-oncogene promoter region</td>
+              <td><img id='pdb2' src="media/chimera/5I2V.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/5LQG" target="_blank">5LQG</a></td>
+              <td><a href="SI/g4db report - 5LQG.html" target="_blank">report</a></td>
+              <td>A two-quartet G-quadruplex formed by human telomere in KCl solution at neutral pH</td>
+              <td><img id='pdb2' src="media/chimera/5LQG.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/5NYS" target="_blank">5NYS</a></td>
+              <td><a href="SI/g4db report - 5NYS.html" target="_blank">report</a></td>
+              <td>M2 G-quadruplex dilute solution</td>
+              <td><img id='pdb2' src="media/chimera/5NYS.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/5YEY" target="_blank">5YEY</a></td>
+              <td><a href="SI/g4db report - 5YEY.html" target="_blank">report</a></td>
+              <td>The structure of a chair-type G-quadruplex of the human telomeric variant in K+ solution</td>
+              <td><img id='pdb2' src="media/chimera/5YEY.png"></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.rcsb.org/structure/6GZN" target="_blank">6GZN</a></td>
+              <td><a href="SI/g4db report - 6GZN.html" target="_blank">report</a></td>
+              <td>Adenine-driven structural switch from two- to three-quartet DNA G-quadruplex</td>
+              <td><img id='pdb2' src="media/chimera/6GZN.png"></td>
+            </tr>
+            <tr>
+              <td>HIV1XX</td>
+              <td><a href="SI/g4db report - HIV1XX.html" target="_blank">report</a></td>
+              <td>no description :(</td>
+              <td>no structure available :(</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </section>
 
-<ul>
-  <li><a href="SI/g4db report - 143D.html" target="_blank">143D</a></li>
-  <li><a href="SI/g4db report - 1XAV.html" target="_blank">1XAV</a></li>
-  <li><a href="SI/g4db report - 2GKU.html" target="_blank">2GKU</a></li>
-  <li><a href="SI/g4db report - 2HY9.html" target="_blank">2HY9</a></li>
-  <li><a href="SI/g4db report - 2JPZ.html" target="_blank">2JPZ</a></li>
-  <li><a href="SI/g4db report - 2JSM.html" target="_blank">2JSM</a></li>
-  <li><a href="SI/g4db report - 2KF8.html" target="_blank">2KF8</a></li>
-  <li><a href="SI/g4db report - 2KM3.html" target="_blank">2KM3</a></li>
-  <li><a href="SI/g4db report - 2KPR.html" target="_blank">2KPR</a></li>
-  <li><a href="SI/g4db report - 2KYP.html" target="_blank">2KYP</a></li>
-  <li><a href="SI/g4db report - 2LBY.html" target="_blank">2LBY</a></li>
-  <li><a href="SI/g4db report - 2LK7.html" target="_blank">2LK7</a></li>
-  <li><a href="SI/g4db report - 2LOD.html" target="_blank">2LOD</a></li>
-  <li><a href="SI/g4db report - 2LPW.html" target="_blank">2LPW</a></li>
-  <li><a href="SI/g4db report - 2LXQ.html" target="_blank">2LXQ</a></li>
-  <li><a href="SI/g4db report - 2M27.html" target="_blank">2M27</a></li>
-  <li><a href="SI/g4db report - 2MGN.html" target="_blank">2MGN</a></li>
-  <li><a href="SI/g4db report - 2N4Y.html" target="_blank">2N4Y</a></li>
-  <li><a href="SI/g4db report - 2O3M.html" target="_blank">2O3M</a></li>
-  <li><a href="SI/g4db report - 4DA3.html" target="_blank">4DA3</a></li>
-  <li><a href="SI/g4db report - 5I2V.html" target="_blank">5I2V</a></li>
-  <li><a href="SI/g4db report - 5LQG.html" target="_blank">5LQG</a></li>
-  <li><a href="SI/g4db report - 5NYS.html" target="_blank">5NYS</a></li>
-  <li><a href="SI/g4db report - 5YEY.html" target="_blank">5YEY</a></li>
-  <li><a href="SI/g4db report - 5YEY.html" target="_blank">6GZN</a></li>
-  <li><a href="SI/g4db report - HIV1XX.html" target="_blank">HIV1XX</a></li>
-</ul>
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>g4dbr features</h2>
+        <p class="text-muted">An R package to build and explore G-quadruplex databases</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <div class="device-container">
+            <div class="device-mockup iphone6_plus portrait white">
+              <div class="device">
+                <div class="screen">
+                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                  <img src="media/logo_g4dbr.png" class="img-fluid" alt="">
+                </div>
+                <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-dna"></i>
+                  <h3>Analytical methods</h3>
+                  <p class="text-muted">Consolidate results from circular dichroism, <sup>1</sup>H-NMR, UV-melting, and native mass spectrometry. Manage buffers, replicates and tunes.</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-cogs"></i>
+                  <h3>Data treatment</h3>
+                  <p class="text-muted">UV-melting data treatment, NMR and MS peak labeling, CD normalisation, extinction coefficient determination, and more!</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="far fa-hand-point-up"></i>
+                  <h3>Interactive</h3>
+                  <p class="text-muted">Filter, select, rescale, colour, and automatically edit Word, HTML or pdf reports</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-unlock text-primary"></i>
+                  <h3>Open Source</h3>
+                  <p class="text-muted">Software GPL-3 licensed, data readable natively in R and exportable in .csv, .xlsx or the clipboard</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<br>
+  <section class="cta" id="cta">
+    <div class="cta-content">
+      <div class="container">
+        <h2>Get help</h2>
+        <a href="https://github.com/EricLarG4/g4dbr/raw/master/inst/manual/g4dbr.pdf" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Manual</a>
+        <hr>
+        <a href="https://ericlarg4.github.io/g4dbr/" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Readme</a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
 
-<h2> Oligonucleotide database in details </h2>
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter" target="_blank">
+          <a href="https://twitter.com/EricLarG4">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-git">
+          <a href="https://github.com/EricLarG4" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-team">
+          <a href="https://gabelicagroup.wixsite.com/biophyms" target="_blank">
+            <i class="fas fa-users"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-mail">
+          <a href="mailto: e-deuteron@protonmail.com">
+            <i class="fas fa-at"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<br>
+  <footer>
+    <div class="container">
+      <p>This site is hosted by GitHub Pages</p>
+      <p>&copy; Eric Largy</p>
+    </div>
+  </footer>
 
-<style>
-#oligotable {
-  border-collapse: collapse;
-  width: 55%;
-  margin-left:auto;margin-right:auto;
-}
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-#oligotable td, #oligotable th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-#oligotable tr:nth-child(even){
-  background-color: #f2f2f2;
-}
-
-#oligotable tr:nth-child(odd) a {
-  background-color: brown;
-  background-color: rgba(70,55,45,0);
-  color: white;
-}
-
-#oligotable tr:nth-child(odd) {
-  background-color: brown;
-  background-color: rgba(70,55,45,0.85);
-  color: white;
-}
-
-#oligotable tr:hover {
-  background-color: tomato;
-}
-
-#oligotable tr:hover a {
-  background-color: tomato;
-}
-
-#oligotable th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: brown;
-  background-color: rgba(70,55,45,1);
-  color: white;
-}
-</style>
-
-
-<table id="oligotable">
-  <tr>
-    <th>PDB code</th>
-    <th>Report</th>
-    <th>Short description</th>
-    <th>Structure</th>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/143D" target="_blank">143D</a></td>
-    <td><a href="SI/g4db report - 143D.html" target="_blank">report</a></td>
-    <td>Solution structure of the human telomeric repeat d[AG3(T2AG3)3] G-tetraplex</td>
-    <td><img id='pdb' src="media/chimera/143D.png" height="100"></td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/1XAV" target="_blank">1XAV</a></td>
-    <td><a href="SI/g4db report - 1XAV.html" target="_blank">report</a></td>
-    <td>Major G-quadruplex structure formed in human c-MYC promoter, a monomeric parallel-stranded quadruplex</td>
-    <td><img id='pdb2' src="media/chimera/1XAV.png" height="100"></td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2GKU" target="_blank">2GKU</a></td>
-    <td><a href="SI/g4db report - 2GKU.html" target="_blank">report</a></td>
-    <td>Monomeric human telomere DNA tetraplex with 3+1 strand fold topology, two edgewise loops and double-chain reversal loop</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2HY9" target="_blank">2HY9</a></td>
-    <td><a href="SI/g4db report - 2HY9.html" target="_blank">report</a></td>
-    <td>Human telomere DNA quadruplex structure in K+ solution hybrid-1 form</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2JPZ" target="_blank">2JPZ</a></td>
-    <td><a href="SI/g4db report - 2JPZ.html" target="_blank">report</a></td>
-    <td>Human telomere DNA quadruplex structure in K+ solution hybrid-2 form</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2JSM" target="_blank">2JSM</a></td>
-    <td><a href="SI/g4db report - 2JSM.html" target="_blank">report</a></td>
-    <td>Monomeric human telomere DNA tetraplex with 3+1 strand fold topology, two edgewise loops and double-chain reversal loop</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2KF8" target="_blank">2KF8</a></td>
-    <td><a href="SI/g4db report - 2KF8.html" target="_blank">report</a></td>
-    <td>Structure of a two-G-tetrad basket-type intramolecular G-quadruplex formed by human telomeric repeats in K+ solution</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2KM3" target="_blank">2KM3</a></td>
-    <td><a href="SI/g4db report - 2KM3.html" target="_blank">report</a></td>
-    <td>Structure of an intramolecular G-quadruplex containing a G.C.G.C tetrad formed by human telomeric variant CTAGGG repeats</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2KPR" target="_blank">2KPR</a></td>
-    <td><a href="SI/g4db report - 2KPR.html" target="_blank">report</a></td>
-    <td>Monomeric intronic human chl1 gene quadruplex DNA</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2KYP" target="_blank">2KYP</a></td>
-    <td><a href="SI/g4db report - 2KYP.html" target="_blank">report</a></td>
-    <td>Monomeric Human CKIT-2 proto-oncogene promoter quadruplex DNA</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2LBY" target="_blank">2LBY</a></td>
-    <td><a href="SI/g4db report - 2LBY.html" target="_blank">report</a></td>
-    <td>G-quadruplex structure formed at the 5'-end of NHEIII_1 element in human c-MYC promoter</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2LK7" target="_blank">2LK7</a></td>
-    <td><a href="SI/g4db report - 2LK7.html" target="_blank">report</a></td>
-    <td>Monomer-dimer equilibrium for 5'-5' stacking of propeller-type parallel-stranded G-quadruplexes</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2LOD" target="_blank">2LOD</a></td>
-    <td><a href="SI/g4db report - 2LOD.html" target="_blank">report</a></td>
-    <td>Solution-state structure of an intramolecular G-quadruplex with propeller, diagonal and edgewise loops</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2LPW" target="_blank">2LPW</a></td>
-    <td><a href="SI/g4db report - 2LPW.html" target="_blank">report</a></td>
-    <td>Human CEB25 minisatellite G-quadruplex</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2LXQ" target="_blank">2LXQ</a></td>
-    <td><a href="SI/g4db report - 2LXQ.html" target="_blank">report</a></td>
-    <td>Monomeric PilE G-Quadruplex DNA from Neisseria Gonorrhoeae</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2M27" target="_blank">2M27</a></td>
-    <td><a href="SI/g4db report - 2M27.html" target="_blank">report</a></td>
-    <td>Major G-quadruplex structure formed in human VEGF promoter, a monomeric parallel-stranded quadruplex</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2MGN" target="_blank">2MGN</a></td>
-    <td><a href="SI/g4db report - 2MGN.html" target="_blank">report</a></td>
-    <td>Solution structure of a G-quadruplex bound to the bisquinolinium compound Phen-DC3</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2N4Y" target="_blank">2N4Y</a></td>
-    <td><a href="SI/g4db report - 2N4Y.html" target="_blank">report</a></td>
-    <td>Structure and possible function of a G-quadruplex in the long terminal repeat of the proviral HIV-1 genome</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/2O3M" target="_blank">2O3M</a></td>
-    <td><a href="SI/g4db report - 2O3M.html" target="_blank">report</a></td>
-    <td>Monomeric G-DNA tetraplex from human C-kit promoter</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/4DA3" target="_blank">4DA3</a></td>
-    <td><a href="SI/g4db report - 4DA3.html" target="_blank">report</a></td>
-    <td>Crystal structure of an intramolecular human telomeric DNA G-quadruplex 21-mer bound by the naphthalene diimide compound MM41</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/5I2V" target="_blank">5I2V</a></td>
-    <td><a href="SI/g4db report - 5I2V.html" target="_blank">report</a></td>
-    <td>NMR structure of a new G-quadruplex forming sequence within the KRAS proto-oncogene promoter region</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/5LQG" target="_blank">5LQG</a></td>
-    <td><a href="SI/g4db report - 5LQG.html" target="_blank">report</a></td>
-    <td>A two-quartet G-quadruplex formed by human telomere in KCl solution at neutral pH</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/5NYS" target="_blank">5NYS</a></td>
-    <td><a href="SI/g4db report - 5NYS.html" target="_blank">report</a></td>
-    <td>M2 G-quadruplex dilute solution</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/5YEY" target="_blank">5YEY</a></td>
-    <td><a href="SI/g4db report - 5YEY.html" target="_blank">report</a></td>
-    <td>The structure of a chair-type G-quadruplex of the human telomeric variant in K+ solution</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td><a href="https://www.rcsb.org/structure/6GZN" target="_blank">6GZN</a></td>
-    <td><a href="SI/g4db report - 6GZN.html" target="_blank">report</a></td>
-    <td>Adenine-driven structural switch from two- to three-quartet DNA G-quadruplex</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <td>HIV1XX</td>
-    <td><a href="SI/g4db report - HIV1XX.html" target="_blank">report</a></td>
-    <td>x</td>
-    <td>x</td>
-  </tr>
-</table>
-
-</div>
-
-<footer>
-
-<br>
-
-<p>This page is hosted by GitHub Pages.</p>
-<p><a href="mailto: eric.largy@u-bordeaux.fr">Contact</a></p>
-<p><a href="https://arna.cnrs.fr">ARNA lab website</a></p>
-
-<br>
-
-</footer>
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.min.js"></script>
 
 </body>
 
 </html>
-
-
-

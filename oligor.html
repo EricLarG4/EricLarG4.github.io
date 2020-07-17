@@ -1,65 +1,263 @@
 <!DOCTYPE html>
-<html>
-  <head>
-		<title>oligor</title>
-		<link rel="stylesheet" type="text/css" href="css/oligor.css">
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	</head>
+<html lang="en">
 
-<body>
-  
-<!--Navigation bar-->
-<div id="nav-placeholder">
+<head>
 
-</div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav_oligor.html");
-});
-</script>
-<!--end of Navigation bar-->
-  
-<div id="oligor" class="oligor">
+  <title>oligor</title>
 
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<h1>Oligonucleotide native HDX/MS data treatment</h1>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-<br>
+  <!-- Plugin CSS -->
+  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
-<h3>Learn more about oligonucleotide HDX/MS</h3>
-<a href="https://pubs.acs.org/doi/10.1021/acs.analchem.9b05298" target="_blank">Anal. Chem. 2020, 92, 6, 4402-4410</a>
+  <!-- Custom styles for this template -->
+  <link href="css/new-age.min_oligor.css" rel="stylesheet">
 
-<br><br>
+</head>
 
-<h3>ASMS 2020 video showcasing the use of OligoR for fast and easy olignucleotide HDX/MS data treatment</h3><br>
+<body id="page-top">
 
-<video width="960" height="540" controls>
-  <source src="/media/ASMS video-LARGY.mp4" type=video/mp4>
-</video>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="nav-link js-scroll-trigger" href="index.html">
+        <i class="fas fa-home" id="home"></i>
+      </a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Back to top</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#features">features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#cta">help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">//</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="G4_database.html">g4 database</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="titrator.html">titrator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="https://ericlarg4.github.io/Portfolio/" target="_blank>portfolio">
+              portfolio
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<br><br>
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-lg-7 my-auto">
+          <div class="header-content mx-auto">
+            <h1 class="mb-5">A native (HDX/)-MS data treatment application dedicated to oligonucleotides<br>
+              <a class="js-scroll-trigger" href="#download">
+                Watch a demo
+              </a></h1>
+            <a href="https://github.com/EricLarG4/OligoR/raw/master/man/ressources/HDX_workflow.pdf" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Download the presentation poster</a>
+            <br><br><br>
+            <h2 class="mb-5">Process HDX/MS, titration and kinetics experiments<br>
+              <a class="js-scroll-trigger" href="#features">
+                View all features
+              </a></h2>
+            <a href="https://github.com/EricLarG4/OligoR/" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Download the package</a>
+          </div>
+        </div>
+        <div class="col-lg-5 my-auto">
+          <div class="device-container">
+            <img src="media/oligor2.png" class="img-fluid" alt="">
+          </div>
+          <div class="button">
+            <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<h3>ASMS 2020 poster: learn more about the OligoR workflow</h3>
+  <section class="download bg-primary text-center" id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="section-heading">OligoR in action</h2>
+          <p class="section-heading">ASMS 2020 video showcasing the use of OligoR for fast and easy olignucleotide HDX/MS data treatment</p>
+          <br>
+          <video class='centervideo' width="100%" controls>
+            <source src="/media/ASMS video-LARGY.mp4" type=video/mp4>
+          </video>
+          <br><br><br>
+          <p>ASMS 2020 poster: learn more about the OligoR workflow</p>
+          <!-- Button to Open the Modal -->
+          <button data-toggle="modal" data-target="#myModal">
+            <img src = https://raw.githubusercontent.com/EricLarG4/OligoR/master/man/ressources/HDX_workflow.png width="100%">
+          </button>
+          <!-- The Modal -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Eric Largy* and Valerie Gabelica, ASMS 2020</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <img 
+                  src = https://raw.githubusercontent.com/EricLarG4/OligoR/master/man/ressources/HDX_workflow.png 
+                  width="1100px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>Click to enlarge</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<br>
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2>OligoR features</h2>
+        <p class="text-muted">An R package for native (HDX-)MS, kinetics and titrations data treatment dedicated to
+          <span class="gradient-text">
+            oligonucleotides
+          </span>
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 my-auto">
+          <div class="device-container">
+            <img src="media/oligor2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-8 my-auto">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fab fa-r-project"></i>
+                  <h3>Shiny app</h3>
+                  <p class="text-muted">An interactive application running in RStudio or a web browser, to go from raw data to publication-ready figures</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-cogs"></i>
+                  <h3>Data treatment</h3>
+                  <p class="text-muted">Experimental and theoretical isotopic distribution comparison, MS file import, scan combine, centroid calculation, intensity standardization, non-linear fitting, and more</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-pencil-ruler"></i>
+                  <h3>Custom figures</h3>
+                  <p class="text-muted">Create custom </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="feature-item">
+                  <i class="fas fa-unlock text-primary"></i>
+                  <h3>Open Source</h3>
+                  <p class="text-muted">Software GPL-3 licensed, open MS files (mzML, mzXML) input, export/import processed data in cross-platform formats (.csv, .xlsx), traceability (file names, scan numbers, m/z ranges)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<img src="https://raw.githubusercontent.com/EricLarG4/OligoR/master/man/ressources/HDX_workflow.png" height="700" style="float: centered" class="border_oligor">
+  <section class="cta" id="cta">
+    <div class="cta-content">
+      <div class="container">
+        <h2>Get help</h2>
+        <a href="https://ericlarg4.github.io/OligoR/" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Readme</a>
+        <br><br><br>
+        <h3><span style="color:white">Learn more about oligonucleotide HDX/MS</span></h3>
+        <br>
+        <a href="https://pubs.acs.org/doi/10.1021/acs.analchem.9b05298" target="_blank" class="btn btn-outline btn-xl js-scroll-trigger">Anal. Chem. 2020, 92, 6, 4402-4410</a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </section>
 
-<br><br>
-</div>
+  <section class="contact bg-primary" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <ul class="list-inline list-social">
+        <li class="list-inline-item social-twitter" target="_blank">
+          <a href="https://twitter.com/EricLarG4">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-git">
+          <a href="https://github.com/EricLarG4" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-team">
+          <a href="https://gabelicagroup.wixsite.com/biophyms" target="_blank">
+            <i class="fas fa-users"></i>
+          </a>
+        </li>
+        <li class="list-inline-item social-mail">
+          <a href="mailto: e-deuteron@protonmail.com">
+            <i class="fas fa-at"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<footer>
-  
-<br>
+  <footer>
+    <div class="container">
+      <p>This site is hosted by GitHub Pages</p>
+      <p>&copy; Eric Largy</p>
+    </div>
+  </footer>
 
-<p>This page is hosted by GitHub Pages.</p>
-<p><a href="mailto: eric.largy@u-bordeaux.fr">Contact</a></p>
-<p><a href="https://arna.cnrs.fr">ARNA lab website</a></p>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<br>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-</footer>
+  <!-- Custom scripts for this template -->
+  <script src="js/new-age.min.js"></script>
 
 </body>
 

@@ -1,0 +1,24 @@
+oligor orange
+#F2664C
+
+oligor lighter or darker orange
+#f7a393 or #f2664c
+
+oligor blue
+#366a90
+
+oligor analogous pink
+#f24c85
+
+oligor bg com pink for links
+#ec3e7e
+
+oligor bg background
+#3EECAC,#f24c85
+
+g4db yellow
+#fdcc52
+
+
+
+

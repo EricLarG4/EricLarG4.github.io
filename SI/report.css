@@ -1,0 +1,29 @@
+/*!
+ * Created by Eric Largy
+ */
+
+
+
+ /*body,html {
+   width:100%;
+   height:100%;
+ }
+*/
+
+
+.figure {
+  width:100%!important;
+}
+
+.figure img {
+   width:100%!important;
+}
+
+.title {
+  color:steelblue
+}
+
+.caption {
+   color:grey;
+   font-style: italic;
+}

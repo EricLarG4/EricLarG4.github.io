@@ -5,10 +5,28 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="G4 database">
+  <meta name="author" content="Eric Largy">
 
   <title>G4 database</title>
+
+  <!--scripts for jquery/datatable-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+     $(document).ready( function () {
+      $('#example').DataTable();
+      } );
+	</script>
+
+	<!-- Bootstrap core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin CSS -->
+  <!--useless?-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +38,6 @@
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
   <!-- Custom styles for this template -->
   <link href="css/new-age.min_g4db.css" rel="stylesheet">
@@ -96,9 +112,6 @@
           <div class="device-container">
             <img src="media/logo_g4dbr.png" class="img-fluid" alt="">
           </div>
-          <div class="button">
-            <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-          </div>
         </div>
       </div>
     </div>
@@ -146,9 +159,16 @@
           <h1 class="section-heading">G-quadruplexes in details</h1>
           <p>Click on the pdb code and report links for more details</p>
           </div>
-          <table class="oligotable">
-            <tr>
-              <th>PDB codes</th>
+        </div>
+      </div>
+          <!-- <table class="oligotable"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-16 mx-auto">
+            <table id="example" class="table table-striped table-borderless table-hover table-sm table-responsive" width="100%">
+              <thead>
+						<tr>
+							<th>PDB codes</th>
               <th>Reports</th>
               <th>Short descriptions</th>
               <th>Structures<br>
@@ -159,7 +179,23 @@
               <span style="color: hotpink">ligand</span>
               </th>
             </tr>
-            <tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th>PDB codes</th>
+              <th>Reports</th>
+              <th>Short descriptions</th>
+              <th>Structures<br>
+              <span style="color: tan">dG</span> |
+              <span style="color: pink">dC</span> |
+              <span style="color: lightblue">dA</span> |
+              <span style="color: lightgreen">dT</span> |
+              <span style="color: hotpink">ligand</span>
+              </th>
+            </tr>
+					</tfoot>
+					<tbody>
+						<tr>
               <td><a href="https://www.rcsb.org/structure/143D" target="_blank">143D</a></td>
               <td><a href="SI/g4db report - 143D.html" target="_blank">report</a></td>
               <td>Solution structure of the human telomeric repeat d[AG3(T2AG3)3] G-tetraplex</td>
@@ -319,7 +355,9 @@
               <td>no description :(</td>
               <td>no structure available :(</td>
             </tr>
-        </table>
+					</tbody>
+          </table>
+        </div>
       </div>
     </div>
   </section>
@@ -432,10 +470,6 @@
       <p>&copy; Eric Largy</p>
     </div>
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

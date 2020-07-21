@@ -288,6 +288,10 @@
     color: tomato;
   }
 
+
+
+
+
   .table th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -682,18 +686,35 @@ table.dataTable td {
     margin-top: 0.5em; } }
 
 
-
-
-
-
   .excelButton:hover {
     background-color: tomato;
     border-color: tomato;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin:0;
   }
 
+
+  .dtsp-title {
+    background-color:#5181FC;
+    color: white;
+    font-weight: bold;
+  }
+
+  .dtsp-searchPane {
+    background-color: #5181FC;
+  }
+
+  .dtsp-panes {
+    background-color: #5181FC;
+  }
+
+  div.dataTables_scrollBody {
+    background-color: rgb(253, 204, 82)!important;
+  }
+
+  .page-link:hover {
+    color:white;
+    background-color: tomato;
+    font-weight: bold
+}
 
 
 

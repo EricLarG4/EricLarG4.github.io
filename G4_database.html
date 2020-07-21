@@ -15,27 +15,48 @@
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.21/b-1.6.2/b-colvis-1.6.2/b-html5-1.6.2/b-print-1.6.2/cr-1.5.2/r-2.2.5/datatables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.21/af-2.3.5/b-1.6.2/b-colvis-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/cr-1.5.2/fc-3.3.1/fh-3.1.7/kt-2.5.2/r-2.2.5/rg-1.1.2/rr-1.2.7/sc-2.0.2/sp-1.1.1/sl-1.3.1/datatables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
+
+
+  <script type="text/javascript" src="dataTables.filter.html.js"></script>
+
 
 
   <script type="text/javascript">
      $(document).ready(function() {
+
+      //dt initialization
       var table = $('#oligotable').DataTable({
+        searchPanes:{
+            viewTotal: true,
+        },
       "bPaginate": true,
+      "bAutoWidth": false,
+      "orderCellsTop": true,
+      "fixedHeader": {
+            header: true,
+            headerOffset: $('#mainNav').height()+10 //offset so that the fix heaser stays under the navbar
+        },
       "lengthChange": true,
-      lengthMenu: [
+      "lengthMenu": [
         [5, 10, 25, -1],
         ['5','10', '25', 'All']
       ],
       "oLanguage": {
       "sLengthMenu": "Display _MENU_",
       },
-      colReorder: true,
-      responsive: true,
-      dom: 'lBfrtip',
-      buttons: [
+      "aoColumnDefs": [
+          { 'bSortable': false, 'aTargets': [ 1,2,7 ] }
+       ],
+      "colReorder": true,
+      "responsive": true,
+      "dom": 'lBfrtipP',
+      "buttons": [
               { extend: 'copy', className: 'excelButton' },
               { extend: 'csv', className: 'excelButton' },
               { extend: 'excel', className: 'excelButton' },
@@ -46,12 +67,15 @@
 	</script>
 
 	<!-- Bootstrap core JavaScript -->
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
 
   <!-- Plugin CSS -->
   <!--useless?-->
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+ <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.21/af-2.3.5/b-1.6.2/b-colvis-1.6.2/b-flash-1.6.2/b-html5-1.6.2/b-print-1.6.2/cr-1.5.2/fc-3.3.1/fh-3.1.7/kt-2.5.2/r-2.2.5/rg-1.1.2/rr-1.2.7/sc-2.0.2/sp-1.1.1/sl-1.3.1/datatables.min.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -183,14 +207,14 @@
           <br>
           <h1 class="section-heading">G-quadruplexes in details</h1>
           <p>Click on the pdb code and report links for more details</p>
-          <p class="text-muted">Sort columns by clicking on column heads, reorder by drag and dropping</p>
+          <p class="text-muted">Sort columns by clicking on column heads (shift key for several columns), reorder by drag and dropping</p>
           </div>
         </div>
       </div>
           <!-- <table class="oligotable"> -->
       <div class="container">
         <div class="row">
-          <div class="col-md-16 mx-auto">
+          <div class="col-md-16 mx-auto my-auto">
             <table id="oligotable" class="table table-striped table-borderless table-hover table-sm table-responsive" width="100%">
               <thead>
 						<tr>

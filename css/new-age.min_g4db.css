@@ -288,62 +288,6 @@
     color: tomato;
   }
 
-
-  /*oligotable*/
-    /*
-  .oligotable {
-    border-collapse: collapse;
-  }
-
-  .oligotable table, td, tr, th {
-      border:none !important;
-  }
-
-  .oligotable th, td {
-    border-bottom: 1px solid;
-  }
-
-  .oligotable th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: center;
-    background-color: #5181FC;
-    color: white;
-  }
-
-  .oligotable td, .oligotable th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-
-  .oligotable tr:nth-child(even) {
-    color: black;
-    background-color: lightgrey;
-  }
-
-  .oligotable tr:nth-child(even) a {
-    color: black;
-  }
-
-  .oligotable tr:nth-child(odd) {
-    background-color: #5181FC;
-    color: white;
-  }
-
-  .oligotable tr:nth-child(odd) a {
-    color: white;
-  }
-
-  .oligotable tr:hover {
-    background-color: tomato;
-  }
-
-  .oligotable td img {
-    height: 200px;
-  }
-*/
-
-
   .table th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -598,7 +542,7 @@ table.dataTable td {
   .dataTables_wrapper .dataTables_info {
     clear: both;
     float: left;
-    padding-top: 0.755em; }
+    padding-top: 0.25em; }
   .dataTables_wrapper .dataTables_paginate {
     float: right;
     text-align: right;
@@ -607,8 +551,8 @@ table.dataTable td {
       box-sizing: border-box;
       display: inline-block;
       min-width: 1.5em;
-      padding: 0.5em 1em;
-      margin-left: 2px;
+      padding: 0.25em 0.25em;
+      margin-left: 0px;
       text-align: center;
       text-decoration: none !important;
       cursor: pointer;
@@ -737,6 +681,18 @@ table.dataTable td {
   .dataTables_wrapper .dataTables_filter {
     margin-top: 0.5em; } }
 
+
+
+
+
+
+  .excelButton:hover {
+    background-color: tomato;
+    border-color: tomato;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin:0;
+  }
 
 
 

@@ -26,14 +26,16 @@
   <script type="text/javascript" src="dataTables.filter.html.js"></script>
 
 
-
   <script type="text/javascript">
      $(document).ready(function() {
 
       //dt initialization
       var table = $('#oligotable').DataTable({
-        searchPanes:{
-            viewTotal: true,
+      language: {
+            searchPanes: {
+                clearMessage: 'Clear',
+                collapse: {0: 'Filters', _: 'Search Options (%d)'}
+            }
         },
       "bPaginate": true,
       "bAutoWidth": false,
@@ -55,13 +57,17 @@
        ],
       "colReorder": true,
       "responsive": true,
-      "dom": 'lBfrtipP',
-      "buttons": [
+      "dom": 'lBfrtip',
+      buttons: {
+        buttons: [
+              'searchPanes',
               { extend: 'copy', className: 'excelButton' },
               { extend: 'csv', className: 'excelButton' },
               { extend: 'excel', className: 'excelButton' },
               { extend: 'pdf', className: 'excelButton' }
           ]
+      }
+
       });
      });
 	</script>
@@ -169,7 +175,7 @@
   <section class="download bg-primary text-center" id="download">
     <div class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-16 mx-auto">
           <h2 class="section-heading">G-quadruplex database</h2>
           <h1 class="section-heading">Quick access for PDB pros!</h1>
           <p>Click on a pdb id to open the corresponding report</p>
@@ -207,7 +213,7 @@
           <br>
           <h1 class="section-heading">G-quadruplexes in details</h1>
           <p>Click on the pdb code and report links for more details</p>
-          <p class="text-muted">Sort columns by clicking on column heads (shift key for several columns), reorder by drag and dropping</p>
+          <p class="text-muted">Sort columns by clicking on column heads (shift key for several columns). Reorder columns by drag and dropping. Filter data with the top-right search field, or the search panes</p>
           </div>
         </div>
       </div>
@@ -509,7 +515,7 @@
             <tr>
               <td>HIV-PRO1</td>
               <td><a href="SI/g4db report - HIV-PRO1.html" target="_blank"><i class="fas fa-file-contract"></i></a></td>
-              <td>no description :(</td>
+              <td>Two G-tetrad antiparallel G4 with an additional Watson–Crick CG base pair from the HIV-1 promoter region</td>
               <td>TGGCCTGGGCGGGACTGGG</td>
               <td>19</td>
               <td>antiparallel</td>

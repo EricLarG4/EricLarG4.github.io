@@ -143,7 +143,9 @@
 
  /*download*/
 
- section.download{position:relative;padding:150px 0}
+ section.download{
+   position:relative;
+   padding:150px 0;}
 
  section.download h2{font-size:50px;margin-top:0}
 
@@ -693,17 +695,17 @@ table.dataTable td {
 
 
   .dtsp-title {
-    background-color:#5181FC;
+    background-color:#6c757d;
     color: white;
     font-weight: bold;
   }
 
   .dtsp-searchPane {
-    background-color: #5181FC;
+    background-color: #6c757d;
   }
 
   .dtsp-panes {
-    background-color: #5181FC;
+    background-color: #6c757d;
   }
 
   div.dataTables_scrollBody {
@@ -718,3 +720,7 @@ table.dataTable td {
 
 
 
+  .bg-primary {
+      background: #fdcc52;
+      background: linear-gradient(#fdcc52, #fee29e);
+  }

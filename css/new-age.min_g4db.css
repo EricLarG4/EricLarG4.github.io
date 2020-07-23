@@ -692,7 +692,11 @@ table.dataTable td {
     background-color: tomato;
     border-color: tomato;
   }
-
+  
+  .filterButton:hover {
+    background-color: #5181FC;
+    border-color: #5181FC;
+  }
 
   .dtsp-title {
     background-color:#6c757d;
@@ -717,7 +721,6 @@ table.dataTable td {
     background-color: tomato;
     font-weight: bold
 }
-
 
 
   .bg-primary {

@@ -60,7 +60,7 @@
       "dom": 'lBfrtip',
       buttons: {
         buttons: [
-              'searchPanes',
+              { extend: 'searchPanes', className: 'filterButton'},
               { extend: 'copy', className: 'excelButton' },
               { extend: 'csv', className: 'excelButton' },
               { extend: 'excel', className: 'excelButton' },
@@ -213,7 +213,7 @@
           <br>
           <h1 class="section-heading">G-quadruplexes in details</h1>
           <p>Click on the pdb code and report links for more details</p>
-          <p class="text-muted">Sort columns by clicking on column heads (shift key for several columns). Reorder columns by drag and dropping. Filter data with the top-right search field, or the search panes</p>
+          <p class="text-muted">Sort columns by clicking on column heads (shift key for several columns). Reorder columns by drag and dropping. Filter data with the top-right search field, or the <span style="color: #5181FC"><b>filters</b></span> button. Copy to clipboard or export in .csv, .xlsx. or .pdf from the buttons below.</p>
           </div>
         </div>
       </div>

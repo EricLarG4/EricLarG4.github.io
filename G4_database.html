@@ -216,7 +216,7 @@
         </div>
       </div>
           <!-- <table class="oligotable"> -->
-      <div class="container">
+      <div class="container" width="100%">
         <div class="row">
           <div class="col-md-16 mx-auto my-auto">
             <table id="oligotable" class="table table-striped table-borderless table-hover table-sm table-responsive" width="100%">
@@ -229,6 +229,7 @@
               <th>Length</th>
               <th>Topology</th>
               <th>Quartets</th>
+              <th>Diagram</th>
               <th>Structure</th>
 					</thead>
 					<tfoot>
@@ -244,6 +245,12 @@
               <span style="color: tan">dG</span> |
               <span style="color: pink">dC</span> |
               <span style="color: lightblue">dA</span> |
+              <span style="color: lightgreen">dT</span>
+              </th>
+              <th>
+              <span style="color: tan">dG</span> |
+              <span style="color: pink">dC</span> |
+              <span style="color: lightblue">dA</span> |
               <span style="color: lightgreen">dT</span> |
               <span style="color: hotpink">ligand</span>
               </th>
@@ -251,13 +258,14 @@
 					</tfoot>
 					<tbody>
 						<tr>
-              <td><a href="https://www.rcsb.org/structure/143D" target="_blank">143D</a></td>
-              <td><a href="SI/g4db report - 143D.html" target="_blank"><i class="fas fa-file-contract"></i></a></td>
+              <td><a href="https://www.rcsb.org/structure/143D" data-toggle="modal">143D</a></td>
+              <td><a href="SI/g4db report - 143D.html" data-toggle="modal"><i class="fas fa-file-contract"></i></a></td>
               <td><span style="font-size: 90%">Solution structure of the human telomeric repeat d[AG3(T2AG3)3] G-tetraplex</span></td>
               <td>AGGGTTAGGGTTAGGGTTAGGG</td>
               <td>22</td>
               <td>antiparallel</td>
               <td>3</td>
+              <td><img id='pdb' src="media/schemes/4x/143D.png"></td>
               <td><img id='pdb' src="media/chimera/143D.png"></td>
             </tr>
             <tr>
@@ -268,7 +276,16 @@
               <td>22</td>
               <td>parallel</td>
               <td>3</td>
-              <td><img id='pdb2' src="media/chimera/1XAV.png"></td>
+              <td>
+                <a class="pop">
+                  <img id='imageresource' src="media/schemes/4x/1XAV.png">
+                </a>
+              </td>
+              <td>
+                <a class="pop">
+                  <img id='imageresource' src="media/chimera/1XAV.png">
+                </a>
+              </td>
             </tr>
             <tr>
               <td><a href="https://www.rcsb.org/structure/2GKU" target="_blank">2GKU</a></td>
@@ -278,6 +295,7 @@
               <td>24</td>
               <td>hybrid</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2GKU.png"></td>
               <td><img id='pdb2' src="media/chimera/2GKU.png"></td>
             </tr>
             <tr>
@@ -288,6 +306,7 @@
               <td>26</td>
               <td>hybrid</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2HY9.png"></td>
               <td><img id='pdb2' src="media/chimera/2HY9.png"></td>
             </tr>
             <tr>
@@ -298,6 +317,7 @@
               <td>26</td>
               <td>hybrid</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2JPZ.png"></td>
               <td><img id='pdb2' src="media/chimera/2JPZ.png"></td>
             </tr>
             <tr>
@@ -308,6 +328,7 @@
               <td>23</td>
               <td>hybrid</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2JSM.png"></td>
               <td><img id='pdb2' src="media/chimera/2JSM.png"></td>
             </tr>
             <tr>
@@ -318,6 +339,7 @@
               <td>22</td>
               <td>antiparallel</td>
               <td>2</td>
+              <td><img id='pdb2' src="media/schemes/4x/2KF8.png"></td>
               <td><img id='pdb2' src="media/chimera/2KF8.png"></td>
             </tr>
             <tr>
@@ -328,6 +350,7 @@
               <td>22</td>
               <td>antiparallel</td>
               <td>2</td>
+              <td><img id='pdb2' src="media/schemes/4x/2KM3.png"></td>
               <td><img id='pdb2' src="media/chimera/2KM3.png"></td>
             </tr>
             <tr>
@@ -338,6 +361,7 @@
               <td>19</td>
               <td>hybrid</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2KPR.png"></td>
               <td><img id='pdb2' src="media/chimera/2KPR.png"></td>
             </tr>
             <tr>
@@ -348,6 +372,7 @@
               <td>21</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2KYP.png"></td>
               <td><img id='pdb2' src="media/chimera/2KYP.png"></td>
             </tr>
             <tr>
@@ -358,6 +383,7 @@
               <td>19</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2LBY.png"></td>
               <td><img id='pdb2' src="media/chimera/2LBY.png"></td>
             </tr>
             <tr>
@@ -368,6 +394,7 @@
               <td>18</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2LK7.png"></td>
               <td><img id='pdb2' src="media/chimera/2LK7.png"></td>
             </tr>
             <tr>
@@ -378,6 +405,7 @@
               <td>22</td>
               <td>hybrid</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2LOD.png"></td>
               <td><img id='pdb2' src="media/chimera/2LOD.png"></td>
             </tr>
             <tr>
@@ -388,6 +416,7 @@
               <td>26</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2LPW.png"></td>
               <td><img id='pdb2' src="media/chimera/2LPW.png"></td>
             </tr>
             <tr>
@@ -398,6 +427,7 @@
               <td>22</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2LXQ.png"></td>
               <td><img id='pdb2' src="media/chimera/2LXQ.png"></td>
             </tr>
             <tr>
@@ -408,6 +438,7 @@
               <td>22</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2M27.png"></td>
               <td><img id='pdb2' src="media/chimera/2M27.png"></td>
             </tr>
             <tr>
@@ -420,6 +451,7 @@
               <td>24</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2MGN.png"></td>
               <td><img id='pdb2' src="media/chimera/2MGN.png"></td>
             </tr>
             <tr>
@@ -430,6 +462,7 @@
               <td>22</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2N4Y.png"></td>
               <td><img id='pdb2' src="media/chimera/2N4Y.png"></td>
             </tr>
             <tr>
@@ -440,6 +473,7 @@
               <td>22</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/2O3M.png"></td>
               <td><img id='pdb2' src="media/chimera/2O3M.png"></td>
             </tr>
             <tr>
@@ -452,6 +486,7 @@
               <td>21</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/4DA3.png"></td>
               <td><img id='pdb2' src="media/chimera/4DA3.png"></td>
             </tr>
             <tr>
@@ -462,6 +497,7 @@
               <td>22</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/5I2V.png"></td>
               <td><img id='pdb2' src="media/chimera/5I2V.png"></td>
             </tr>
             <tr>
@@ -472,6 +508,7 @@
               <td>22</td>
               <td>antiparallel</td>
               <td>2</td>
+              <td><img id='pdb2' src="media/schemes/4x/5LQG.png"></td>
               <td><img id='pdb2' src="media/chimera/5LQG.png"></td>
             </tr>
             <tr>
@@ -482,6 +519,7 @@
               <td>20</td>
               <td>parallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/5NYS.png"></td>
               <td><img id='pdb2' src="media/chimera/5NYS.png"></td>
             </tr>
             <tr>
@@ -492,6 +530,7 @@
               <td>21</td>
               <td>antiparallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/5YEY.png"></td>
               <td><img id='pdb2' src="media/chimera/5YEY.png"></td>
             </tr>
             <tr>
@@ -502,6 +541,7 @@
               <td>20</td>
               <td>antiparallel</td>
               <td>3</td>
+              <td><img id='pdb2' src="media/schemes/4x/6GZN.png"></td>
               <td><img id='pdb2' src="media/chimera/6GZN.png"></td>
             </tr>
             <tr>
@@ -512,6 +552,7 @@
               <td>19</td>
               <td>antiparallel</td>
               <td>2</td>
+              <td><img id='pdb2' src="media/schemes/4x/HIV-PRO1.png"></td>
               <td>no structure available :(</td>
             </tr>
 					</tbody>
@@ -629,6 +670,31 @@
       <p>&copy; Eric Largy</p>
     </div>
   </footer>
+  
+  
+  
+  <!-- Bootstrap modal for pop image class -->
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">              
+        <div class="modal-body">
+        	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <img src="" class="imagepreview" style="width: 100%;" >
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap modal script -->
+  <script>
+    $(function() {
+  		$('.pop').on('click', function() {
+  			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+  			$('#imagemodal').modal('show');   
+  		});		
+  });
+  </script>
+  
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

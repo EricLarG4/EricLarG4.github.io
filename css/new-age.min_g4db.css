@@ -528,7 +528,8 @@ table.dataTable {
 table.dataTable,
 table.dataTable th,
 table.dataTable td {
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 /*
  * Control feature layout
@@ -692,7 +693,7 @@ table.dataTable td {
     background-color: tomato;
     border-color: tomato;
   }
-  
+
   .filterButton:hover {
     background-color: #5181FC;
     border-color: #5181FC;
@@ -730,5 +731,5 @@ table.dataTable td {
 
  #contact {
    background:#fdcc52!important;
-   background-color:##fdcc52!important;
+   background-color:#fdcc52!important;
  }

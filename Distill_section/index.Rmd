@@ -1,0 +1,6 @@
+---
+title: "G4 guide"
+site: distill::distill_website
+---
+
+[Learn more about the basics of G-quadruplex structure basics](guideline.html)

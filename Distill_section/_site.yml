@@ -1,0 +1,26 @@
+name: "Distill_section"
+title: "G4 guide"
+description: |
+  G4 guide
+output_dir: "docs"
+navbar:
+  logo:
+    image: img/Logo ARNA - lowres - transparent.png
+    href: https://arna.cnrs.fr
+  search: false
+  left:
+    - text: "Home"
+      href: https://ericlarg4.github.io/
+  right:
+    - text: "Github"
+      href: https://github.com/EricLarG4/
+    - text: "G4 database"
+      href: https://ericlarg4.github.io/G4_database.html
+    - text: "OligoR"
+      href: https://ericlarg4.github.io/oligor.html
+    - text: "TitratoR"
+      href: https://ericlarg4.github.io/titrator.html
+    - text: "Portfolio"
+      href: https://ericlarg4.github.io/Portfolio/
+output: distill::distill_article
+theme: css/theme_distill.css

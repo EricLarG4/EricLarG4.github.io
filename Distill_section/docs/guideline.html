@@ -89,6 +89,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
   <meta property="description" itemprop="description" content="A quick overview of the (nucleo)bases of G-quadruplex nucleic acids."/>
 
+  <link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
 
   <!--  https://schema.org/Article -->
   <meta property="article:published" itemprop="datePublished" content="2020-10-21"/>
@@ -108,6 +109,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="G4 guide: Basics of G-quadruplex structures"/>
   <meta property="twitter:description" content="A quick overview of the (nucleo)bases of G-quadruplex nucleic acids."/>
+  <meta property="twitter:site" content="@EricLarG4"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -2151,6 +2153,13 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="#quartets-and-derivatives">1.2 Quartets and derivatives</a></li>
 <li><a href="#beyond-the-g4-core-loops-bulges-and-flanking-sequences">1.3 Beyond the G4 core: loops, bulges, and flanking sequences</a></li>
 <li><a href="#loop-types">1.4 Loop types</a></li>
+<li><a href="#grooves">1.5 Grooves</a></li>
+<li><a href="#topologies">1.6 Topologies</a></li>
+<li><a href="#guanine-stacking">1.7 Guanine stacking</a>
+<ul>
+<li><a href="#glycosidic-bond-angles">1.7.1 Glycosidic bond angles</a></li>
+<li><a href="#g-quartet-polarity">1.7.2 . G-quartet polarity</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -2206,6 +2215,46 @@ Figure 3: G-quadruplex features beyond the core (A), loop geometries (B), and sn
 <p><u>Diagonal</u>: loop linking diagonally opposed <u>G-tracts</u> of opposite 5’-3’ polarity (antiparallel) (Figure <a href="#fig:fig3">3</a>B). Diagonal loops typically contain at least 3 nucleotides.</p>
 <p><u>Snapback</u>: Loop that connects an external <em>quartet</em> to an internal <em>quartet</em>., instead of linking two external <u>quartets</u> as more commonly observed. This means that one <em>stem</em> of consecutively stacked guanines is composed of two distinct <em>G-tracts</em> (Figure <a href="#fig:fig3">3</a>C) (DOI: 10.1021/ja068739h). This implies that the <em>stem</em> in question is not composed of a continuous phosphate backbone.</p>
 <p>Both <em>lateral</em> and <em>diagonal</em> loops result in a strand polarity inversion occurring in <em>antiparallel</em> and <em>hybrid</em> topologies, whereas <em>propeller</em> loops preserve the same orientation and are thus found only in <em>parallel</em> and <em>hybrid</em> topologies (see section 1.6).</p>
+<h2 id="grooves">1.5 Grooves</h2>
+<p>Grooves are defined as the space framed by two adjacent phosphate backbones. The canonical B-DNA duplex displays two grooves, referred to as minor and major groove because of their different widths (5.7 and 11.7 Å, respectively, between a selected backbone phosphate i and the i+3 phosphate on the opposing strand ). In G-quadruplex structures, however, three groove widths are distinguished: narrow (8.9 Å), medium (10.2 Å), and wide (12.2 Å) <a href="https://dx.doi.org/10.1039/9781847555298-00001">ref</a>.</p>
+<p>Considering that each guanine is either in a syn or anti conformation (see section 1.7.1), there are 24 = 16 possible combinations per G-quartet. These will in turn yield 8 possible groove-widths combinations for a given core, interdependent with the loop geometries. There is no proper terminology for these groove-widths combinations yet. For monomolecular G-quadruplexes without snapbacks, the groove width can be inferred directly from the order of loop types (DOI: 10.1016/j.ymeth.2013.06.004).</p>
+<h2 id="topologies">1.6 Topologies</h2>
+<p>A classical way to describe G-quadruplex structures is to report their relative strand orientation following the 5’ to 3’ phosphate backbone polarity (Figure <a href="#fig:fig4">4</a>). Three topologies are often distinguished based on strand orientation. Based on the groove width combination, two types of <em>antiparallel</em> structures can be distinguished.</p>
+<p><u>Parallel</u>: All strands are oriented in the same direction, with often all loops displaying a propeller geometry (Figure 4; counter example: Figure 3C). It is the typical topology of <em>tetramolecular</em> G4s. All guanines share the same glycosidic bond angle (usually anti).</p>
+<p><u>Antiparallel</u> (or 2+2 antiparallel): Two strands are oriented in one direction, and two strands in the other (Figure 4). There are in fact not one but <strong>two</strong> distinct antiparallel topologies: the opposite-direction strands can be either laterally (“basket” type) or diagonally (“chair” type) opposed, yielding two distinct <em>G-quartets</em> arrangements and groove types (medium-narrow-medium-wide for the “basket”, narrow-wide-narrow-wide for the “chair”). Antiparallel strand polarities lead to systematic inversions of glycosidic bond angles vs. the previous <em>G-tract</em>.</p>
+<p><u>Hybrid</u>: Three strands are oriented in one direction, and the remaining strand in the other. The hybrid-1 and hybrid-2 forms are often distinguished in the human telomeric-related literature, but – contrary to the <em>antiparallel</em> fold – the <em>G-quartets</em> arrangements are equivalent upon a 90° rotation. Often referred to as “3+1” by analogy with the above-mentioned 2+2 antiparallel. Guanosines’ glycosidic bond angles are maintained after a <em>propeller</em> loop or inverted after a <em>lateral</em> or <em>diagonal</em> loop vs. the previous <em>G-tract</em>.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig4"></span>
+<img src="img/fig4.png" alt="Schemes of G-quadruplex reflecting the major topologies (bottom) and corresponding top view of the upper G-quartets (top). The phosphate backbone is shown as a line and guanines are depicted by an orange circle and a rectangle or cuboid in either syn (dark gray) or anti (light gray) conformation." width="100%" />
+<p class="caption">
+Figure 4: Schemes of G-quadruplex reflecting the major topologies (bottom) and corresponding top view of the upper G-quartets (top). The phosphate backbone is shown as a line and guanines are depicted by an orange circle and a rectangle or cuboid in either syn (dark gray) or anti (light gray) conformation.
+</p>
+</div>
+</div>
+<p>Note that this classification is a simplification that <u>does <strong>not</strong> reflect the complexity of topology subsets</u> observed in vitro, which may ultimately lead to inaccurate and/or misleading reports.</p>
+<p>Alternatively, it is possible to define 26 distinct (monomolecular) topologies based on glycosidic bond angles, using loops combination as a descriptor (DOI: 10.1016/j.ymeth.2013.06.004). This approach allows determining the width of grooves from the knowledge of loop geometries. Although these topologies are possible on paper, not all have been observed so far. On the other hand, the Z-G4 (left-handed topology) was not foreseen.</p>
+<p><u>Polymorphic</u>: A sequence is defined as polymorphic if it can adopt several topologies. A salient example of a polymorphic motif is the human telomeric motif, known to adopt at least 6 different structures depending on <em>flanking</em> sequences and experimental conditions. In conditions wherein topologies of different types (<em>parallel</em>, <em>antiparallel</em>, or <em>hybrid</em>) coexist, the topology is sometimes referred to as “mixed” topology.</p>
+<h2 id="guanine-stacking">1.7 Guanine stacking</h2>
+<h3 id="glycosidic-bond-angles">1.7.1 Glycosidic bond angles</h3>
+<p>Guanines can adopt a syn or anti conformation relative to the glycosidic bond (Figure <a href="#fig:fig5">5</a>A). Schematically, this corresponds to the base and sugar being on the “same side” or “opposite side” of the glycosidic bond, respectively. The torsion angle <span class="math inline">\(\chi\)</span>, defined by the O4′-C1′-N9-C4 atoms (for purines) can be used to determine the conformation of guanines (-90° to 90°: syn; 90° to 180° and -90° to -180°: anti) ((Figure <a href="#fig:fig5">5</a>B-D).</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig5"></span>
+<img src="img/fig5.png" alt="Syn and anti glycosidic bond angles of guanosine (A), Stacking between two successive guanines in anti-anti (B; 2O3M, DOI: 10.1021/ja068739h), syn-anti (C; 2JPZ, DOI: 10.1093/nar/gkm522) and anti-syn (D; 1JPQ, DOI: 10.1016/S0022-2836(02)00428-X) conformations. The 5’-guanosine is on top (n) and the 3’ at the bottom (n+1)." width="100%" />
+<p class="caption">
+Figure 5: Syn and anti glycosidic bond angles of guanosine (A), Stacking between two successive guanines in anti-anti (B; 2O3M, DOI: 10.1021/ja068739h), syn-anti (C; 2JPZ, DOI: 10.1093/nar/gkm522) and anti-syn (D; 1JPQ, DOI: 10.1016/S0022-2836(02)00428-X) conformations. The 5’-guanosine is on top (n) and the 3’ at the bottom (n+1).
+</p>
+</div>
+</div>
+<h3 id="g-quartet-polarity">1.7.2 . G-quartet polarity</h3>
+<p>H-bonding can be used to define a G-quartet polarity, following the donor-to-acceptor direction (i.e. N2-H to N7 and N1-H to O6) ((Figure <a href="#fig:fig6">6</a>A,B). This leads to two types of G-quartet stacking , wherein the G-quartets share the same polarity (e.g. parallel topology) or not ((Figure <a href="#fig:fig6">6</a>C,D).</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:fig6"></span>
+<img src="img/fig6.png" alt="G-quartet polarity defined by hydrogen bonding donor-to-acceptor direction (A, B), top (C) and side (D) views of 2-G-quartet stacking with identical or opposite polarities. The 5’-end is located on the top quartet and the point of view is in the 5’ to 3’ direction (top to bottom). Guanines are depicted by an orange circle and a rectangle or cuboid." width="100%" />
+<p class="caption">
+Figure 6: G-quartet polarity defined by hydrogen bonding donor-to-acceptor direction (A, B), top (C) and side (D) views of 2-G-quartet stacking with identical or opposite polarities. The 5’-end is located on the top quartet and the point of view is in the 5’ to 3’ direction (top to bottom). Guanines are depicted by an orange circle and a rectangle or cuboid.
+</p>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2227,7 +2276,12 @@ Figure 3: G-quadruplex features beyond the core (A), loop geometries (B), and sn
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+<h3 id="updates-and-corrections">Corrections</h3>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/EricLarG4/EricLarG4.github.io/issues/new">create an issue</a> on the source repository.</p>
+<h3 id="reuse">Reuse</h3>
+<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. Source code is available at <a href="https://github.com/EricLarG4/EricLarG4.github.io">https://github.com/EricLarG4/EricLarG4.github.io</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
@@ -2237,6 +2291,8 @@ Figure 3: G-quadruplex features beyond the core (A), loop geometries (B), and sn
 </head>
 <body>
 © Copyright 2020 Eric Largy
+
+Creative Commons BY-NC-SA
 
  <!DOCTYPE html>
 </body>

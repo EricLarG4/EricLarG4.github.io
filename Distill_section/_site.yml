@@ -3,6 +3,11 @@ title: "G4 guide"
 description: |
   G4 guide
 output_dir: "docs"
+creative_commons: CC BY-NC-SA
+twitter:
+  site: "@EricLarG4"
+base_url: https://ericLarG4.github.io/Distill_section
+repository_url: https://github.com/EricLarG4/EricLarG4.github.io
 navbar:
   logo:
     image: img/Logo ARNA - lowres - transparent.png

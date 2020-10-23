@@ -1,1 +1,6 @@
 theme: jekyll-theme-midnight
+ analytics:
+  		provider: "google-universal"
+  	google:
+ 	tracking_id: "G-L6865FVEBZ"
+

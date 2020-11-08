@@ -27,5 +27,7 @@ navbar:
       href: https://ericlarg4.github.io/titrator.html
     - text: "Portfolio"
       href: https://ericlarg4.github.io/Portfolio/
+    - text: "Publications"
+      href: https://ericlarg4.github.io/bib.html
 output: distill::distill_article
 theme: css/theme_distill.css

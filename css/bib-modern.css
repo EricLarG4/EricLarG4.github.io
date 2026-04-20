@@ -11,19 +11,21 @@
   --text-color: #333;
   --background-color: #fafafa;
   --accent-color: #2c3e50;
-  --link-color: #0066cc;
+  --link-color: #0055a4;
+  --link-hover-color: #003366;
   --border-color: #e0e0e0;
   --heading-color: #1a1a1a;
 }
 
 /* Base Styles */
 body {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   color: var(--text-color);
   background-color: var(--background-color);
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,15 +43,28 @@ h2 {
   padding-bottom: 0.3em;
 }
 
+p {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+/* Links: clearly visible but classy */
 a {
   color: var(--link-color);
   text-decoration: none;
-  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease, color 0.2s ease;
+  font-family: var(--primary-font);
 }
 
 a:hover, a:focus {
+  color: var(--link-hover-color);
+  border-bottom: 1px solid var(--link-hover-color);
+}
+
+a:active {
   color: var(--accent-color);
-  text-decoration: underline;
 }
 
 /* Layout */
@@ -99,7 +114,7 @@ a:hover, a:focus {
 }
 
 #mainNav .navbar-nav > li > a {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-size: 0.9rem;
   color: var(--text-color);
   text-transform: uppercase;
@@ -108,7 +123,8 @@ a:hover, a:focus {
 }
 
 #mainNav .navbar-nav > li > a:hover {
-  color: var(--accent-color);
+  color: var(--link-hover-color);
+  border-bottom: 1px solid var(--link-hover-color);
 }
 
 /* Main Content */
@@ -126,7 +142,7 @@ a:hover, a:focus {
 }
 
 .col-md-4 a, .col-md-4 p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--text-color);
   margin-bottom: 0.5em;
   display: block;
@@ -147,7 +163,7 @@ a:hover, a:focus {
   margin: 15px 0;
   border-left: 3px solid var(--accent-color);
   padding-left: 15px;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
 }
 
 .bibbase_group:hover {
@@ -167,6 +183,7 @@ footer p {
   font-size: 0.9rem;
   color: var(--text-color);
   margin: 5px 0;
+  font-family: var(--primary-font);
 }
 
 /* Responsive */

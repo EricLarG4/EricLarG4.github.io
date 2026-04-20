@@ -1,0 +1,182 @@
+/* bib-modern.css */
+/* Modern, professional, and minimalist styling for publications page */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Verlag:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary-font: 'Verlag', serif;
+  --secondary-font: 'Inter', sans-serif;
+  --text-color: #333;
+  --background-color: #fafafa;
+  --accent-color: #2c3e50;
+  --link-color: #0066cc;
+  --border-color: #e0e0e0;
+  --heading-color: #1a1a1a;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.3em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-md-4, .col-md-8 {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-md-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+/* Header and Navigation */
+#mainNav {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#mainNav .navbar-brand {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  color: var(--heading-color);
+  font-size: 1.2rem;
+}
+
+#mainNav .navbar-nav > li > a {
+  font-family: var(--secondary-font);
+  font-size: 0.9rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+}
+
+#mainNav .navbar-nav > li > a:hover {
+  color: var(--accent-color);
+}
+
+/* Main Content */
+#page-top {
+  padding-top: 80px;
+}
+
+.col-md-4 {
+  margin-top: 40px;
+}
+
+.col-md-4 h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.col-md-4 a, .col-md-4 p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.col-md-8 {
+  margin-top: 40px;
+}
+
+/* Publications Section */
+.bibbase_group {
+  background-color: transparent;
+  font-style: normal;
+  font-size: 1rem;
+  text-shadow: none;
+  border-radius: 0;
+  padding: 10px 0;
+  margin: 15px 0;
+  border-left: 3px solid var(--accent-color);
+  padding-left: 15px;
+  font-family: var(--secondary-font);
+}
+
+.bibbase_group:hover {
+  background-color: rgba(44, 62, 80, 0.03);
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-color);
+  border-top: 1px solid var(--border-color);
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .col-md-4, .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #mainNav .navbar-nav {
+    text-align: center;
+  }
+}

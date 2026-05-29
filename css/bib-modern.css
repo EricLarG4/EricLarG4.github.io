@@ -10,7 +10,7 @@
   --background-color: #fafafa;
   --accent-color: #2c3e50;
   --link-color: #0055a4;
-  --link-hover-color: #003366;
+  --link-hover-color: #ffc0cb;
   --border-color: #e0e0e0;
   --heading-color: #1a1a1a;
 }
@@ -58,7 +58,6 @@ a {
 
 a:hover, a:focus {
   color: var(--link-hover-color);
-  border-bottom: 1px solid var(--link-hover-color);
 }
 
 a:active {

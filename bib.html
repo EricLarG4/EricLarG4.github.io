@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +11,7 @@
 
   <title>Eric Largy - Publications</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6865FVEBZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-L6865FVEBZ');
-  </script>
+  {% include analytics.html %}
 
   <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -60,35 +55,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#page-top">//</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Quadruplexes
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="nav-link js-scroll-trigger" href="G4_database.html">G4 database</a>
-              <a class="nav-link js-scroll-trigger" href="Distill_section/docs/guideline.html" target="_blank">G4 guide</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Applications
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="nav-link js-scroll-trigger" href="https://e-deuteron.shinyapps.io/meltR2/">meltR</a>
-              <a class="nav-link js-scroll-trigger" href="https://e-deuteron.shinyapps.io/absorbR/">absorbR</a>
-              <a class="nav-link js-scroll-trigger" href="oligor.html">oligoR</a>
-              <a class="nav-link js-scroll-trigger" href="titrator.html">titrator</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Repositories
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="nav-link js-scroll-trigger" href="https://github.com/EricLarG4/" target="_blank">GitHub</a>
-              <a class="nav-link js-scroll-trigger" href="https://zenodo.org/record/4200176" target="_blank">Zenodo</a>
-            </div>
-          </li>
+          {% include nav-dropdowns.html %}
         </ul>
       </div>
     </div>
@@ -99,16 +66,16 @@
       <div class="col-md-4">
         <h2>Dr. Eric Largy</h2>
         <p>
-          <a href="https://www.u-bordeaux.com/">Université de Bordeaux</a>
+          <a href="https://www.u-bordeaux.com/">Universit&eacute; de Bordeaux</a>
         </p>
         <p>
           <b>Research</b><br/>
-          <a href="https://cdn.bricbordeaux.com/wp-content/uploads/2025/09/plan-situation-bbs-site-carreire.pdf">Bordeaux Biologie Santé</a>
+          <a href="https://cdn.bricbordeaux.com/wp-content/uploads/2025/09/plan-situation-bbs-site-carreire.pdf">Bordeaux Biologie Sant&eacute;</a>
           <a href="https://www.arna.cnrs.fr/">ARNA laboratory</a>
           <a href="https://www.nmrbordeaux.org/">PRISM team</a>
           INSERM U1212 CNRS 5320<br/>
-Université de Bordeaux<br/>
-Bâtiment BBS 5ème Etage<br/>
+Universit&eacute; de Bordeaux<br/>
+B&acirc;timent BBS 5&egrave;me Etage<br/>
 2 rue Dr. Hoffmann Martinot<br/>
 33076 Bordeaux<br/>
 FRANCE  <br/>
@@ -145,17 +112,6 @@ FRANCE  <br/>
     </div>
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/new-age.min.js"></script>
-
-  <!-- Dropdown on hover -->
-  <script src='js/dropdown_hover.js'></script>
+  {% include scripts-common.html %}
 </body>
 </html>

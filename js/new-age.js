@@ -2,9 +2,9 @@
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var hash = this.hash;
+  function handleSmoothScroll(element) {
+    if (location.pathname.replace(/^\//, '') == element.pathname.replace(/^\//, '') && location.hostname == element.hostname) {
+      var hash = element.hash;
       var target = $(hash);
       if (!target.length) {
         var name = hash.slice(1);
@@ -19,18 +19,30 @@
         return false;
       }
     }
+  }
+
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    return handleSmoothScroll(this);
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  function closeResponsiveMenu() {
     $('.navbar-collapse').collapse('hide');
+  }
+
+  $('.js-scroll-trigger').click(function() {
+    closeResponsiveMenu();
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 54
-  });
+  function initScrollspy() {
+    $('body').scrollspy({
+      target: '#mainNav',
+      offset: 54
+    });
+  }
+
+  initScrollspy();
 
   // Collapse Navbar
   var navbarCollapse = function() {
@@ -53,4 +65,14 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-})(jQuery); // End of use strict
+  // Export for testing
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+      handleSmoothScroll: handleSmoothScroll,
+      closeResponsiveMenu: closeResponsiveMenu,
+      initScrollspy: initScrollspy,
+      navbarCollapse: navbarCollapse
+    };
+  }
+
+})(typeof jQuery !== 'undefined' ? jQuery : (typeof $ !== 'undefined' ? $ : null)); // End of use strict

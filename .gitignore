@@ -6,3 +6,5 @@ EricLarG4.github.io.Rproj
 .Rhistory
 media/chimera/helices.py
 media/chimera/helices.pyc
+node_modules/
+coverage/

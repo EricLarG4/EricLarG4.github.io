@@ -39,44 +39,54 @@
      $(document).ready(function() {
 
       //dt initialization
-      var table = $('#oligotable').DataTable({
-      language: {
-            searchPanes: {
-                clearMessage: 'Clear',
-                collapse: {0: 'Filters', _: 'Search Options (%d)'}
-            }
-        },
-      "bPaginate": true,
-      "bAutoWidth": false,
-      "orderCellsTop": true,
-      "fixedHeader": {
-            header: true,
-            headerOffset: $('#mainNav').height()+10 //offset so that the fix heaser stays under the navbar
-        },
-      "lengthChange": true,
-      "lengthMenu": [
-        [-1, 5, 10, 25],
-        ['All','5','10', '25']
-      ],
-      "oLanguage": {
-      "sLengthMenu": "Display _MENU_",
-      },
-      "aoColumnDefs": [
-          { 'bSortable': false, 'aTargets': [ 1,2,7 ] }
-       ],
-      "colReorder": true,
-      "responsive": true,
-      "dom": 'lBfrtip',
-      buttons: {
-        buttons: [
-              { extend: 'searchPanes', className: 'filterButton'},
-              { extend: 'copy', className: 'excelButton' },
-              { extend: 'csv', className: 'excelButton' },
-              { extend: 'excel', className: 'excelButton' },
-              { extend: 'pdf', className: 'excelButton' }
-          ]
+      try {
+        var $table = $('#oligotable');
+        if (!$table.length) {
+          console.error("DataTable target #oligotable not found in the DOM.");
+          return;
         }
-      });
+        var navHeight = $('#mainNav').height() || 0;
+        var table = $table.DataTable({
+        language: {
+              searchPanes: {
+                  clearMessage: 'Clear',
+                  collapse: {0: 'Filters', _: 'Search Options (%d)'}
+              }
+          },
+        "bPaginate": true,
+        "bAutoWidth": false,
+        "orderCellsTop": true,
+        "fixedHeader": {
+              header: true,
+              headerOffset: navHeight + 10
+          },
+        "lengthChange": true,
+        "lengthMenu": [
+          [-1, 5, 10, 25],
+          ['All','5','10', '25']
+        ],
+        "oLanguage": {
+        "sLengthMenu": "Display _MENU_",
+        },
+        "aoColumnDefs": [
+            { 'bSortable': false, 'aTargets': [ 1,2,7 ] }
+         ],
+        "colReorder": true,
+        "responsive": true,
+        "dom": 'lBfrtip',
+        buttons: {
+          buttons: [
+                { extend: 'searchPanes', className: 'filterButton'},
+                { extend: 'copy', className: 'excelButton' },
+                { extend: 'csv', className: 'excelButton' },
+                { extend: 'excel', className: 'excelButton' },
+                { extend: 'pdf', className: 'excelButton' }
+            ]
+          }
+        });
+      } catch (e) {
+        console.error("DataTable initialization failed:", e.message);
+      }
      });
 	</script>
 
@@ -1089,7 +1099,12 @@
   <script>
     $(function() {
   		$('.pop').on('click', function() {
-  			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+  			var imgSrc = $(this).find('img').attr('src');
+  			if (!imgSrc) {
+  			  console.error("No image source found for modal preview.");
+  			  return;
+  			}
+  			$('.imagepreview').attr('src', imgSrc);
   			$('#imagemodal').modal('show');
   		});
   });

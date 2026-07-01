@@ -107,7 +107,12 @@ function js() {
       './js/*.js',
       '!./js/*.min.js'
     ])
+    .pipe(plumber())
     .pipe(uglify())
+    .on("error", function(err) {
+      console.error("JS uglify error:", err.message);
+      this.emit("end");
+    })
     .pipe(header(banner, {
       pkg: pkg
     }))

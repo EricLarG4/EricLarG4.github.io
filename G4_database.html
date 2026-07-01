@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,15 +12,7 @@
 
   <title>G4 database</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6865FVEBZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-L6865FVEBZ');
-  </script>
+  {% include analytics.html %}
 
   <!--scripts for jquery/datatable-->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -91,16 +85,7 @@
 
 
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
+  {% include head-css.html %}
 
   <!-- Custom styles for this template -->
   <link href="css/new-age.min_g4db.css" rel="stylesheet">
@@ -148,35 +133,7 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#page-top">//</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Quadruplexes
-            </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="nav-link js-scroll-trigger" href="G4_database.html">G4 database</a>
-              <a class="nav-link js-scroll-trigger" href="Distill_section/docs/guideline.html" target="_blank">G4 guide</a>
-             </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Applications
-            </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="nav-link js-scroll-trigger" href="https://e-deuteron.shinyapps.io/meltR2/">meltR</a>
-               <a class="nav-link js-scroll-trigger" href="https://e-deuteron.shinyapps.io/absorbR/">absorbR</a>
-               <a class="nav-link js-scroll-trigger" href="oligor.html">oligoR</a>
-               <a class="nav-link js-scroll-trigger" href="titrator.html">titrator</a>
-             </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Repositories
-            </a>
-             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-               <a class="nav-link js-scroll-trigger" href="https://github.com/EricLarG4/" target="_blank">GitHub</a>
-               <a class="nav-link js-scroll-trigger" href="https://zenodo.org/record/4200176" target="_blank">Zenodo</a>
-             </div>
-          </li>
+          {% include nav-dropdowns.html %}
         </ul>
       </div>
     </div>
@@ -1035,40 +992,9 @@
     <div class="overlay"></div>
   </section>
 
-  <section class="contact bg-primary" id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <ul class="list-inline list-social">
-        <li class="list-inline-item social-twitter" target="_blank">
-          <a href="https://twitter.com/EricLarG4">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-git">
-          <a href="https://github.com/EricLarG4" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-team">
-          <a href="https://gabelicagroup.wixsite.com/biophyms" target="_blank">
-            <i class="fas fa-users"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-mail">
-          <a href="mailto: e-deuteron@protonmail.com">
-            <i class="fas fa-at"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+  {% include contact-section.html %}
 
-  <footer>
-    <div class="container">
-      <p>This site is hosted by GitHub Pages</p>
-      <p>&copy; Eric Largy</p>
-    </div>
-  </footer>
+  {% include footer.html %}
 
 
 

@@ -28,7 +28,12 @@
 
 <script>
 $(function(){
-  $("#nav-placeholder").load("nav_titrator.html");
+  $("#nav-placeholder").load("nav_titrator.html", function(response, status, xhr) {
+    if (status === "error") {
+      console.error("Failed to load navigation: " + xhr.status + " " + xhr.statusText);
+      $("#nav-placeholder").html('<p style="color:red;">Navigation failed to load.</p>');
+    }
+  });
 });
 </script>
 <!--end of Navigation bar-->

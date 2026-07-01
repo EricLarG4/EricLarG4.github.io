@@ -4,6 +4,12 @@ const $dropdownMenu = $(".dropdown-menu");
 const showClass = "show";
 
 $(window).on("load resize", function() {
+  if (!$dropdown.length) {
+    return;
+  }
+  if (typeof this.matchMedia !== "function") {
+    return;
+  }
   if (this.matchMedia("(min-width: 768px)").matches) {
     $dropdown.hover(
       function() {
